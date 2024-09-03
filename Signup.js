@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (existingUser.password === hashedPassword) {
                 showAlert('User already signed up. Redirecting to sign in...');
                 setTimeout(() => {
-                    window.location.href = 'Signin.html';
+                    window.location.href = 'login.html';
                 }, 2000);
             } else {
                 showAlert('Email is already being used!');

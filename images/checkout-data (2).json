@@ -1,0 +1,41 @@
+{
+  "items": [
+    {
+      "id": 3,
+      "name": "Marvel’s Guardians of the Galaxy",
+      "platform": "ps5",
+      "quantity": 3,
+      "price": 33.99
+    },
+    {
+      "id": 2,
+      "name": "Winter is comming",
+      "platform": "PS4",
+      "quantity": 4,
+      "price": 65
+    },
+    {
+      "id": 1,
+      "name": "Summer Offer",
+      "platform": "PS5",
+      "quantity": 4,
+      "price": 105.99
+    },
+    {
+      "id": 3,
+      "name": "Hello September",
+      "platform": "Xbox one",
+      "quantity": 4,
+      "price": 69
+    }
+  ],
+  "totalQuantity": 15,
+  "finalTotal": "1067.92",
+  "paymentMethod": "creditCard",
+  "customerInfo": {
+    "fullName": "ali",
+    "phoneNumber": "769458589",
+    "address": "lebanon",
+    "governorate": "BEIRUT"
+  }
+}

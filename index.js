@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded",async function() {
         var gameDiv = event.target.closest(".game-card");
         if (gameDiv) {
             var gameId = gameDiv.getAttribute("data-id");
-            window.location.href = "itemdetails.html?id=" + gameId;
+            window.location.href = "itemDetails.html?id=" + gameId;
         }
     })
 let changePass=document.getElementById("changePass");

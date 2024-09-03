@@ -58,3 +58,18 @@ document.getElementById('changePasswordForm').addEventListener('submit', functio
         messageElement.textContent = "User not found!";
     }
 });
+document.querySelectorAll('.input-group input').forEach((input) => {
+    input.addEventListener('focus', () => {
+        input.previousElementSibling.style.top = '-20px';
+        input.previousElementSibling.style.fontSize = '12px';
+        input.previousElementSibling.style.color = '#0ef';
+    });
+
+    input.addEventListener('blur', () => {
+        if (!input.value) {
+            input.previousElementSibling.style.top = '50%';
+            input.previousElementSibling.style.fontSize = '16px';
+            input.previousElementSibling.style.color = '#fff';
+        }
+    });
+});
