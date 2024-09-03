@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Console Kingdom</title>
+    <link rel="stylesheet" href="itemDetails.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+          <div class="logo">
+              <a href="index.html">
+                  <img src="images\consolekingdom1.png" alt="Console Kingdom Logo">
+              </a>
+          </div>
+          <nav class="main-nav">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#!" id="categoriesLink">Categories</a>
+                      <ul class="dropdown" id="categoryList">
+                          <li><a href="index.html#action-category">Action</a></li>
+                          <li><a href="index.html#sports-category">Sports</a></li>
+                          <li><a href="index.html#survival-category">Survival</a></li>
+                          <li><a href="index.html#adventure-category">Adventure</a></li>
+                      </ul></li>
+                  <li><a href="aboutUs.html" target="_blank">About</a></li>
+              </ul>
+          </nav>
+         
+          <div class="header-actions">
+              <div class="search-bar">
+                  <input type="text" placeholder="Search for games..." id="search-bar">
+              </div>
+              <div class="user-menu">
+                  <a href="login.html" class="login-link">Login</a>
+                  <a href="Singup.html" class="signup-link">Sign Up</a>
+              </div>
+              <div class="cart-icon">
+                  <a href="cart.html">
+                      <img src="images\cart-removebg-preview.png" alt="Cart">
+                      <span class="cart-count" id="cart-count">0</span>
+                  </a>
+              </div>
+          </div>
+      </div>
+      
+  </header>
+  <main id="big-container">
+    <!-- first half -->
+    <div class="general">
+
+      <!-- background of the general information -->
+      <div class="background"></div>
+      <div class="content">
+
+        <div class="general-info hidden">
+          <!-- name + rating + price -->
+          <span><h1 class="name" id="product-name"></h1></span>
+          <span><h2 id="rating"></h2></span>
+          <span><h2 id="product-price"></h2></span>
+
+          <!-- cart button here -->
+          <div>
+            <button class="cart-btn" id="cart-button" type="button">ADD TO CART</button>
+            <a href="cart.html" target="uniqueWindowName" style="width: 200px; height:30px;">Cart</a>
+          </div>
+          <!-- buttons ps5 + ps4 + ...-->
+          <div class="buttons">
+            <button id="PS5" class="defualt-style" data-platform="ps5">PS5</button>
+            <button id="PS4" class="defualt-style" data-platform="ps4">PS4</button>
+            <button id="XBOX-one"  class="defualt-style" data-platform="xbox one">Xbox One</button>
+            <button type="button"  class="defualt-style" id="XBOX-X" data-platform="xbox x">Xbox X</button>
+          </div>
+
+        </div>
+
+        <!-- details -->
+        <div class="details hidden">
+          
+          <div class="date-tags">
+            <span><h4 id="category"></h4></span>
+            <span><h4 id="release-date"></h4></span>
+            <span><h4 id="developer"></h4></span>
+            <span><h4 id="publisher"></h4></span>
+            <span><h4 id="tags"></h4></span>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!--description + reviews + trailer-->
+    <div class="second-half">
+      <div class="des-plat">
+
+        <!-- description of the game -->
+        <div class="description hidden">
+          <h1>Description:</h1>
+          <p id="product-description"></p>
+        </div>
+
+        <!-- reviews of users -->
+        <div class="platform hidden">
+          <h1>Reviews</h1>
+          <div id="Reviews"></div>
+        </div>
+        
+      </div>
+
+      <!-- Youtube trailer -->
+      <div class="trailer"></div>
+      <!-- bundles -->
+      <div  id="bundles">
+        
+      </div>
+      
+    </div>
+    </main>
+    <footer class="main-footer" id="footer">
+      <div class="footer-container">
+          <div class="footer-section about">
+              <h3>Console Kingdom</h3>
+              <p>Your one-stop shop for all console games. We provide the best deals on the latest and greatest video games across all platforms.</p>
+          </div>
+          <div class="footer-section quick-links">
+              <h3>Quick Links</h3>
+              <ul>
+                  <li><a href="aboutUs.html" target="_blank">About Us</a></li>
+                  <li><a href="https://web.whatsapp.com/" target="_blank">Contact Us</a></li>
+                  <li><a href="PrivacyPolicy.html" target="_blank">Privacy Policy</a></li>
+                  <li><a href="PrivacyPolicy.html" target="_blank">Terms & Conditions</a></li>
+              </ul>
+          </div>
+          <div class="footer-section social-media">
+              <h3>Follow Us</h3>
+              <ul>
+                  <li><a href="https://www.facebook.com/" target="_blank"><img src="images/icons8-facebook-50.png" alt="Facebook" > Facebook</a></li>
+                  <li><a href="https://x.com/" target="_blank"><img src="images/icons8-twitter-50.png" alt="Twitter"> Twitter</a></li>
+                  <li><a href="https://www.instagram.com/" target="_blank"><img src="images/icons8-instagram-50.png" alt="Instagram"> Instagram</a></li>
+              </ul>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2024 Console Kingdom. All rights reserved.</p>
+      </div>
+  </footer>
+    <script src="itemDetailss.js" ></script>
+    <script defer src="/app.js"></script> 
+  </body>
+</html>

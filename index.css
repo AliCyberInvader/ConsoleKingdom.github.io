@@ -1,0 +1,625 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.main-header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px 0; /* Adjust padding to balance the larger logo */
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 150px; /* Keep the logo size as is */
+
+    max-width: auto; 
+    object-fit: contain;
+    display: block;
+}
+
+.main-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 30px; /* Slightly increase gap to space out items */
+}
+
+.main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 20px; /* Increase padding for better visual weight */
+    font-size: 18px; /* Increase font size for prominence */
+    display: block;
+}
+
+.main-nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 25px; /* Adjust gap for better spacing */
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 5px 10px;
+    max-width: 300px; /* Restrict width for consistency */
+}
+
+.search-bar input {
+    border: none;
+    padding: 10px 15px; /* Adjusted padding for better alignment */
+    outline: none;
+    flex: 1;
+    font-size: 16px;
+}
+
+.search-bar button {
+    background-color: transparent;
+    border: none;
+    padding: 10px 15px; /* Adjusted padding */
+    cursor: pointer;
+}
+
+.search-bar button img {
+    height: 20px;
+}
+
+.user-menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 20px; /* Increased padding for better alignment with nav items */
+    font-size: 18px; /* Match with navigation items */
+}
+
+.user-menu a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+.cart-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.cart-icon img {
+    height: 60px; /* Increased height for visual balance */
+}
+
+.cart-count {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+
+/* Recommendations Section */
+.recommendations {
+    width: 95%;
+    padding: 20px;
+   
+}
+
+.recommendations h2 {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.recommended-games {
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.game-card {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    width: 90%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.game-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.game-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.game-card p {
+    font-size: 14px;
+    color: #777;
+}
+.products-container {
+    padding: 20px;
+}
+
+.category-section {
+    margin-bottom: 40px;
+}
+
+.category-section h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px,1fr));
+    gap: 20px;
+    
+}
+
+.game-card1 {
+    background-color: #fff;
+    max-width: 240px;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.game-card1:hover {
+    transform: scale(1.05);
+}
+
+.game-card1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.game-card1 h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.game-card1 p {
+    font-size: 14px;
+    color: #777;
+}
+
+/* Footer Styles */
+.main-footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    width: 22%;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-section ul li img {
+    vertical-align: middle;
+    margin-right: 8px;
+    height: 16px;
+}
+
+.footer-section .newsletter input[type="email"] {
+    width: calc(100% - 110px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.footer-section .newsletter button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #555;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.footer-section .newsletter button:hover {
+    background-color: #777;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 14px;
+}
+/* Menu Button (Fixed at the bottom of the screen) */
+/* Menu Button */
+.menu-btn {
+    position: fixed;
+    width: 320px;
+    bottom: 20px;
+    left: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 50px;
+    z-index: 1000;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.menu-btn:hover {
+    background-color: #555;
+}
+
+.slide-up-menu {
+    position: fixed;
+    opacity: 0;
+    bottom: 20px;
+    left: 20px;
+    width: 250px;
+    background-color: #333;
+    color: white;
+    z-index: 999;
+    padding: 15px 20px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 1s ease, opacity 1s ease; /* Ensure transition time is applied */
+    transform: translateY(100%); /* Start below the button */
+    pointer-events: none; /* Prevent interaction when not visible */
+}
+
+.slide-up-menu a {
+    text-align: center;
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.slide-up-menu a:hover {
+    text-decoration: underline;
+}
+
+.slide-up-menu .close-btn {
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+/* When the menu is open, slide it up */
+.slide-up-menu.open {
+    opacity: 1;
+    transform: translateY(0); /* Slide into view */
+    pointer-events: auto; /* Enable interaction when visible */
+}
+
+.filter-btn {
+    position: fixed;
+    width: 320px;
+    bottom: 90px;
+    left: 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 50px;
+    z-index: 1000;
+    cursor: pointer;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.filter-btn:hover {
+    background-color: #555;
+}
+
+.filter-slide-up-menu {
+    position: fixed;
+    opacity: 0;
+    bottom: 20px;
+    left: 20px;
+    width: 250px;
+    background-color: #333;
+    color: white;
+    z-index: 999;
+    padding: 15px 20px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 1s ease, opacity 1s ease; /* Ensure transition time is applied */
+    transform: translateY(100%); /* Start below the button */
+    pointer-events: none; /* Prevent interaction when not visible */
+}
+
+.filter-slide-up-menu a {
+    text-align: center;
+    display: block;
+    color: white;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.filter-slide-up-menu a:hover {
+    text-decoration: underline;
+}
+
+.filter-btns a{
+    background: none;
+    display: inline;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding-right: 20px;
+}
+/* When the menu is open, slide it up */
+.filter-slide-up-menu.open {
+    opacity: 1;
+    transform: translateY(0); /* Slide into view */
+    pointer-events: auto; /* Enable interaction when visible */
+}
+.hidden {
+    display: none;
+}
+.filter-section {
+    margin-bottom: 0;
+    margin-top: 0;
+    height: 50px;
+}
+.filter-btns {
+    margin-top: 50px;
+    text-align: center;
+}
+.filter-btns .filter-confirm-btn {
+    font-size: 30px;
+}
+.filter-btns .filter-close-btn {
+    font-size: 35px;
+}
+
+
+.dropdown {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 10px;
+    background-color: #333;
+    border: 1px solid #ccc;
+}
+
+.dropdown li a {
+    display: none;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+.dropdown li a:hover {
+    background-color: #f1f1f1;
+}
+#categoryList{
+    display: none;
+}
+
+
+.best-deals {
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  
+  .best-deals h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .slider {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    position: relative;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bundles-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+  }
+  
+  .bundle-card {
+    min-width: 300px;
+    max-width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .bundle-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    object-fit: cover;
+  }
+  
+  .bundle-card h3 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .bundle-card p {
+    margin-bottom: 10px;
+    font-size: 1rem;
+  }
+  
+  .bundle-card .bundle_price {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .slider::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .slider::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 10px;
+  }
+  
+  .slider::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+  }
+  
+  .slider {
+    cursor: grab;
+  }
+  
+  .slider:active {
+    cursor: grabbing;
+  }
+  .add-to-cart-btn {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .add-to-cart-btn:hover {
+    background-color: #333;
+  }
+
+  /* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 60px;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  /* The Close Button */
+  .close-btn-cart {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-btn-cart:hover,
+  .close-btn-cart:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  

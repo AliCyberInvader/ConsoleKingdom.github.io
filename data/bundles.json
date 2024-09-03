@@ -1,0 +1,37 @@
+{
+  "bundles": [
+    {
+      "id": 1,
+      "name": "Summer Offer",
+      "type": "PS5",
+      "price": 105.99,
+      "image": "images2/bundles/bundles-1.png",
+      "description": "Enjoy the end of summer with fiery games! <br>Call Of Duty Cold War <br> F1 24 <br> Subnautica: Below Zero"
+    },
+    {
+      "id":2,
+      "name": "Winter is comming",
+      "type": "PS4",
+      "price": 65.0,
+      "image": "images2/bundles/bundel-2.jpg",
+      "description": "Make your winter warm with high enthusiasm! <br> Far Cry 6<br>Ark: Survival Evolved <br> WWE 2k24"
+      
+    },
+    {
+      "id":3,
+      "name": "Hello September",
+      "type": "Xbox one",
+      "price": 69.0,
+      "image": "images2/bundles/bundel-3.jpg",
+      "description": "Enjoy with the most beautiful games! <br> Madden NLF 24<br> GTA 5 <br> Dying Light 2"
+    },
+    {
+      "id": 4,
+      "name": "Hello September X",
+      "type": "Xbox x",
+      "price": 80.0,
+      "image": "images2/bundles/bundel-4.jpg",
+      "description": "Enjoy with the most beautiful games! <br>EA SPORTS FC 24<br> Mans Sky <br> Marvel"
+    }
+  ]
+}

@@ -1,0 +1,1026 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "name": "Call Of Duty Cold War",
+      "description": "Black Ops cold War will drop fans into the depths of the Cold War's volatile geopolitical battle of the early 1980s. Nothing is ever as it seems in a gripping single-player campaign, where players will come face-to-face with historical figures and hard truths, as they battle around the globe through iconic locales like East Berlin, Vietnam, Turkey, Soviet kgb headquarters and more.",
+      "category": "Action",
+      "bg":"images/codColWar.webp",
+      "platforms": [
+        {
+          "type": "ps5",
+          "image": "images2/ps5/coldWarPs5.jpg",
+          "price": 34.99
+        },
+        {
+          "type": "ps4",
+          "image": "images2/ps4/coldWarPs4.jpg",
+          "price": 29.99
+        },
+        {
+          "type": "xbox one",
+          "image": "images2/xbox-x/coldWarXbox.jpg",
+          "price": 19.99
+        },
+        {
+          "type": "xbox x",
+          "image": "images2/xbox-x/coldWarXbox.jpg",
+          "price": 19.99
+        }
+      ],
+      "releaseDate": "2020-11-13",
+      "developer": "Treyarch",
+      "publisher": "Activision",
+      "rating": "Mature 17+",
+      "reviews": [
+        {
+          "username": "Katzentier",
+          "rating": 4.0,
+          "comment": "Top game right now the large selection in zombie mode is a lot of fun, the only drawback is that you simply fly out of the existing game from time to time."
+        },
+        {
+          "username": "Darius_FT",
+          "rating": 5.0,
+          "comment": "A bit different from the rest of the CoD games, but still good."
+        }
+      ],
+      "trailerUrl": "https://www.youtube.com/embed/aTS9n_m7TW0?si=MjBL3Tx_zanPNvGo",
+      "tags": [
+        "Action",
+        "Fps",
+        "Campaign",
+        "Multiplayer",
+        "Zombies",
+        "Warzone"
+      ],
+      "cover": "images2/Covers/CallOfDutyColdWar-cover.jpeg"
+    },
+    {
+      "id": 2,
+      "name": "Gta 5",
+      "description": "Grand Theft Auto V is a 2013 action-adventure game developed by Rockstar North and published by Rockstar Games. It is the seventh main entry in the Grand Theft Auto series, following 2008's Grand Theft Auto IV, and the fifteenth instalment overall.",
+      "category": "Action",
+      "bg":"images/gta5.png",
+      "platforms": [
+        {
+          "type": "ps5",
+          "image": "images2/ps5/gta5Ps5.jpg",
+          "price": 28.99
+        },
+        {
+          "type": "ps4",
+          "image": "images2/ps4/Gta5Ps4.jpg",
+          "price": 26.99
+        },
+        {
+          "type": "xbox one",
+          "image": "images2/xbox-one/gta5Xbox1.png",
+          "price": 21.99
+        },
+        {
+          "type": "xbox x",
+          "image": "images2/xbox-x/gta5XboxX.png",
+          "price": 19.99
+        }
+      ],
+      "releaseDate": "2013-9-17",
+      "developer": "Rockstar North",
+      "publisher": "Rockstar Games",
+      "rating": "Mature 17+",
+      "reviews": [
+        {
+          "username": "Elijah B.",
+          "rating": 5.0,
+          "comment": "You have to do some tutorial missions first. Then it’s all normal. Online you have to pay money towards PS."
+        },
+        {
+          "username": "IshowSpeed",
+          "rating": 5.0,
+          "comment": "100% real arrived on time. I trusted this process"
+        }
+      ],
+      "trailerUrl": "https://www.youtube.com/embed/QkkoHAzjnUs?si=yM_dhCCPWqGB68Nr",
+      "tags": ["Action", "Single player", "Multiplayer"],
+      "cover": "images2/Covers/GTA5-cover.jpeg"
+    },
+    {
+      "id": 3,
+      "name": "Marvel’s Guardians of the Galaxy",
+      "bg":"images/marvel.AVIF",
+      "description": "Fire up a wild ride across the cosmos with a fresh take on Marvel’s Guardians of the Galaxy. In this third-person action-adventure game, you are Star-Lord, and thanks to your bold yet questionable leadership, you have persuaded an oddball crew of unlikely heroes to join you. Some jerk (surely not you) has set off a chain of catastrophic events, and only you can hold the unpredictable Guardians together long enough to fight off total interplanetary meltdown. Use Element Blasters, tag-team beat downs, jet boot-powered dropkicks, nothing’s off-limits.",
+      "category": "Action",
+      "platforms": [
+        {
+          "type": "ps5",
+          "image": "images2/ps5/marvelPs5.jpg",
+          "price": 33.99
+        },
+        {
+          "type": "ps4",
+          "image": "images2/ps4/marvelPs4.jpg",
+          "price": 28.99
+        },
+        {
+          "type": "xbox one",
+          "image": "images2/xbox-x/marvelXbox.png",
+          "price": 36.99
+        },
+        {
+          "type": "xbox x",
+          "image": "images2/xbox-x/marvelXbox.png",
+          "price": 36.99
+        }
+      ],
+      "releaseDate": "2021-10-26",
+      "developer": "Eidos Montreal",
+      "publisher": "Square Enix",
+      "rating": "T 14+",
+      "reviews": [
+        {
+          "username": "Tina Bates",
+          "rating": 5.0,
+          "comment": "Came really fast great quality at a great price would highly recommend this seller and will be purchasing from them again"
+        },
+        {
+          "username": "Maxwell",
+          "rating": 3.0,
+          "comment": "Visually beautiful, strong at the beginning, later you are annoyed and bored with the same types of opponents. The beautifully designed worlds then offer variety. Soundtracks are brilliant, and so are dialogues."
+        }
+      ],
+      "trailerUrl": "https://www.youtube.com/embed/VdMiY9MEeMk?si=avv_ConfazSSZebQ",
+      "tags": ["Action", "Single player", "Tpp"],
+      "cover": "images2/Covers/marvil-cover.jpeg"
+    },
+    {
+      "id": 4,
+      "name": "Outriders",
+      "bg":"images/OUTRIDERS.AVIF",
+      "description": "Outriders is a 1-3 player co-op RPG shooter set in an original, dark and desperate sci-fi universe. As mankind bleeds out in the trenches of enoch, you'll create your own outrider and embark on a journey across the hostile planet. With rich storytelling spanning a diverse world, you'll leave behind the slums and shanty towns of the first city and traverse forests, mountains and desert in the pursuit of a mysterious signal. Combining intense gunplay with violent powers and an arsenal of increasingly twisted weaponry and gear-sets, outriders offers countless hours of gameplay from one of the finest shooter developers in the industry - people can fly.",
+      "category": "Action",
+      "platforms": [
+        {
+          "type": "ps5",
+          "image": "images2/ps5/outridersPs5.jpg",
+          "price": 23.99
+        },
+        {
+          "type": "ps4",
+          "image": "images2/ps4/outridersPs4.jpg",
+          "price": 9.99
+        },
+        {
+          "type": "xbox one",
+          "image": "images2/xbox-x/outriderXbox.jpg",
+          "price": 19.99
+        },
+        {
+          "type": "xbox x",
+          "image": "images2/xbox-x/outriderXbox.jpg",
+          "price": 19.99
+        }
+      ],
+      "releaseDate": "2021-04-01",
+      "developer": "Square Enix External Studios",
+      "publisher": "Square Enix",
+      "rating": "M 17+",
+      "reviews": [
+        {
+          "username": "Paul",
+          "rating": 5.0,
+          "comment": "Great game enjoy it it's a bit broken but at least the company is working on it yes buy it."
+        },
+        {
+          "username": "Flashharry",
+          "rating": 1.0,
+          "comment": "The game was fun when it worked. Kept getting booted and the multiplayer didn’t work. There were also server issues. Got so fed up I returned the game. Shame but such is life."
+        }
+      ],
+      "trailerUrl": "https://www.youtube.com/embed/8iQnuJxfj-c?si=o2-S5atVgRDpDn5b",
+      "tags": ["Action", "Single player", "Multiplayer", "Tps", "role playing"],
+      "cover": "images2/Covers/Outriders-cover.jpeg"
+    },
+    {
+      "id": 5,
+      "name": "Resident Evil Village",
+      "bg":"images/REVillage.avif",
+      "description": "Experience survival horror like never before in Resident Evil village, the eighth major instalment in the genre-defining Resident Evil franchise. Set a few years after the horrifying events in the critically acclaimed Resident Evil 7 biohazard, the all-new storyline brings Ethan Winters to a remote snow-capped village filled with a diverse cast of terrifying enemies. After a devastating encounter with Resident Evil series hero Chris Redfield, Ethan pursues him in search of answers but finds himself in an entirely new nightmare.<br>Modern console technology paired with Capcom proprietary RE engine deliver a visceral experience combining pulse-pounding action with signature survival horror gameplay synonymous with the Resident Evil series. Harnessing the newest console technology, Resident Evil village delivers stunning graphics and advanced technology on PlayStation 5 and Xbox series x|s. New gameplay features harken back to fan-favourite elements from previous Resident Evil games while new mechanics offer more depth to the action during combat.",
+      "category": "Action",
+      "platforms": [
+        {
+          "type": "ps5",
+          "image": "images2/ps5/residentevilPs5.jpg",
+          "price": 17.99
+        },
+        {
+          "type": "ps4",
+          "image": "images2/ps4/residentevilPs4.png",
+          "price": 25.99
+        },
+        {
+          "type": "xbox one",
+          "image": "images2/xbox-x/residentevilXbox.jpg",
+          "price": 28.99
+        },
+        {
+          "type": "xbox x",
+          "image": "images2/xbox-x/residentevilXbox.jpg",
+          "price": 28.99
+        }
+      ],
+      "releaseDate": "2021-05-07",
+      "developer": "Capcom",
+      "publisher": "Capcom",
+      "rating": "A 18+",
+      "reviews": [
+        {
+          "username": "gameriz",
+          "rating": 5.0,
+          "comment": "better than re-4 great plot- story line has many turns -wonderful graphics and scary atmosphere - this is a game that gives you your moneys worth -only down side was that a couple of the puzzules were hard to solve-had to cheat on them - the typewriter and merchant are back -its about time."
+        },
+        {
+          "username": "blistercox1",
+          "rating": 4.0,
+          "comment": "The game has a lot of surprises and situations to get into, some are pretty hard to defeat."
+        }
+      ],
+      "trailerUrl": "https://www.youtube.com/embed/CNpIfP4vtrE?si=DmgshLdi8kb3fGga",
+      "tags": ["Action", "Survival", "horror", "Single player"],
+      "cover": "images2/Covers/ResidentEvilVillage-cover.jpeg"
+    },
+    {
+      "id": 6,
+      "name": "Assassins Creed Valhalla",
+      "bg":"images/Assassin Creed Valhalla.avif",
+      "description": "Set in the Viking Age, you play as Eivor, a Viking raider leading their clan to settle in England. The game combines exploration, combat, and a rich narrative.",
+      "price": 59.99,
+      "category": "Adventure",
+      "platforms": [
+        {
+          "type": "ps5",
+          "image": "images2/ps5/Assassins Creed Valhalla.webp",
+          "price": 59.99
+        },
+        {
+          "type": "ps4",
+          "image": "images2/ps4/Assassins Creed Valhalla.webp",
+          "price": 49.99
+        },
+        {
+          "type": "xbox one",
+          "image": "images2/xbox-one/Assassins Creed Valhalla.webp",
+          "price": 59.99
+        },
+        {
+          "type": "xbox x",
+          "image": "images2/xbox-x/Assassins Creed Valhalla.webp",
+          "price": 69.99
+        }
+      ],
+      "releaseDate": "2020-11-10",
+      "developer": "Ubisoft Montreal ",
+      "publisher": "Ubisoft",
+      "rating": "Mature 17+",
+      "reviews": [
+        {
+          "username": "gamerBeast15",
+          "rating": 5,
+          "comment": "Great game."
+        },
+        {
+          "username": "Heloloya009",
+          "rating": 4.0,
+          "comment": "Amazing graphics and gameplay, but the story could be better."
+        }
+      ],
+      "trailerUrl": "https://www.youtube.com/embed/ssrNcwxALS4?si=vS31I4PE0uoaaZeA",
+      "tags": ["RPG", "Action", "Viking"],
+      "cover": "images2/Covers/AssassinsCreedValhalla-cover.jpeg"
+    },
+    {
+      "id": 7,
+      "name": "Far Cry 6",
+      "bg":"images/Far Cry 6.webp",
+      "description": "Set in a fictional Caribbean island ruled by a dictator, you engage in guerrilla warfare to overthrow the regime. The game features an open world with various vehicles, weapons, and missions.",
+      "price": 35.0,
+      "category": "Adventure",
+      "platforms": [
+        {
+          "type": "ps5",
+          "image": "images2/ps5/FarCry6.jpg",
+          "price": 35.0
+        },
+        {
+          "type": "ps4",
+          "image": "images2/ps4/FarCry6.webp",
+          "price": 25.0
+        },
+        {
+          "type": "xbox one",
+          "image": "images2/xbox-one/FarCry6.webp",
+          "price": 15.0
+        },
+        {
+          "type": "xbox x",
+          "image": "images2/xbox-x/FarCry6.webp",
+          "price": 18.0
+        }
+      ],
+      "releaseDate": "2021-10-07",
+      "developer": "Ubisoft Toronto",
+      "publisher": "Ubisoft",
+      "rating": "Mature 17+",
+      "reviews": [
+        {
+          "username": "Papaw Shane",
+          "rating": 4.0,
+          "comment": "Far Cry 6, is as solid a game there is Graphics - Far Cry 6, the newest in the Far Cry series, is absolutely amazing!  Graphically, FC6 can really push your hardware to the limits, while still being flexible enough to run at a good clip."
+        },
+        {
+          "username": "Vincent Boone",
+          "rating": 4.0,
+          "comment": "This version improves over previous versions in the series because now you can access your entire inventory of weapons wherever you go.This version is mostly enjoyed on a very high end PC , I don't reccomend playing this on a console for a truly immersive experience."
+        }
+      ],
+      "trailerUrl": "https://www.youtube.com/embed/-IJuKT1mHO8?si=1eJ0dXzzYEW4NAgT",
+      "tags": ["Shooter", "Single Player", "Open World"],
+      "cover": "images2/Covers/FarCry6-cover.jpeg"
+    },
+    {
+      "id": 8,
+      "name": "The Witcher 3",
+      "description": "In The Witcher 3: Wild Hunt, players step into the shoes of Geralt of Rivia, a skilled monster hunter searching for his adopted daughter. The game is set in a richly detailed open world filled with diverse landscapes, deep lore, and engaging narratives. Players can explore a vast and immersive world, engage in complex quests, and make choices that affect the outcome of the story. The game is renowned for its intricate storytelling, expansive world-building, and morally complex decisions.",
+      "price": 31.0,
+      "category": "Adventure",
+      "bg":"images/The Witcher 3.webp",
+      "platforms": [
+        {
+          "type": "ps5",
+          "image": "images2/ps5/The Witcher 3.webp",
+          "price": 31.0
+        },
+        {
+          "type": "ps4",
+          "image": "images2/ps4/The Witcher 3.webp",
+          "price": 31.0
+        },
+        {
+          "type": "xbox one",
+          "image": "images2/xbox-one/The Witcher 3.webp",
+          "price": 27.0
+        },
+        {
+          "type": "xbox x",
+          "image": "images2/xbox-x/The Witcher 3.webp",
+          "price": 27.0
+        }
+      ],
+      "releaseDate": "2015-05-19",
+      "developer": "CD Projekt Red",
+      "publisher": "CD Projekt",
+      "rating": "Mature 17+",
+      "reviews": [
+        {
+          "username": "Petros Ventouris",
+          "rating": 5.0,
+          "comment": "One of the best RPG'S I've ever played, had the game in my library for a long time before trying it and I must say, great value for money, you will get every pennies worth out of this game! I just started the first DLC and the story for it has already got me captivated!Honestly you won't regret trying this game."
+        },
+        {
+          "username": "Larry Cmar",
+          "rating": 5.0,
+          "comment": "Excellent graphics and awesome storyline! it’s a game but it’s also a movie that you play a part in and your decisions affect the outcome.again…the storyline is great, and I enjoy the interactions between Gerald and his mentor, along with the different people that he encounters. And there’s a wide variety of monsters to slay. It’s a really interesting game where you’re also watching what seems like a movie or a TV series but also some pretty cool fight scenes against some pretty gnarly creatures"
+        }
+      ],
+      "trailerUrl": "https://www.youtube.com/embed/XHrskkHf958?si=si3AKARbBOPoVi1k",
+      "tags": ["Action RPG", "Adventure", "Single-player"],
+      "cover": "images2/Covers/TheWitcher3.jpeg"
+    },
+    {
+      "id": 9,
+      "name": "Dying Light 2",
+      "description": "Set in a post-apocalyptic world where a viral outbreak has turned most of humanity into infected monsters, Dying Light 2 Stay Human takes place 15 years after the events of the original game. Players assume the role of Aiden Caldwell, a survivor with extraordinary parkour abilities and combat skills. The game focuses on exploration, survival, and narrative choices, allowing players to shape the world around them through their decisions.",
+      "price": 32.98,
+      "category": "Adventure",
+      "bg":"images/Dying-Light-2.avif",
+      "platforms": [
+        {
+          "type": "ps5",
+          "image": "images2/ps5/Dying-Light-2.jpg",
+          "price": 28.39
+        },
+        {
+          "type": "ps4",
+          "image": "images2/ps4/Dying Light 2.webp",
+          "price": 19.99
+        },
+        {
+          "type": "xbox one",
+          "image": "images2/xbox-one/Dying Light 2.webp",
+          "price": 32.98
+        },
+        {
+          "type": "xbox x",
+          "image": "images2/xbox-x/Dying Light 2.webp",
+          "price": 32.98
+        }
+      ],
+      "releaseDate": "2022-02-04",
+      "developer": "Techland",
+      "publisher": "Techland Publishing",
+      "rating": "Mature 17+",
+      "reviews": [
+        {
+          "username": "Mikel Roush",
+          "rating": 5.0,
+          "comment": "After two hours I can say this new game is great. The combat is a more refined version of the original but you don't run out of stamina after 3 swings now. The parkour is more fluid than the original (although it can look kind of floaty  occasionally). The graphics are polished and pretty, definately uses the power of the ps5 well. The side characters voice actors don't sound as stiff as in the original however the main character Aiden sounds a lot like Kyle Crane. All together I am enjoying the game and can't wait to continue."
+        },
+        {
+          "username": "Igor Dizhevskii",
+          "rating": 5.0,
+          "comment": "I paid $90 CAD for this game and I think it's definitely worth it after completing story twice with 67 hours. I've been waiting for so long and now that it is here it's amazing. So much content compared to dying light 1, Definitely some bugs here and there but as long as you don't leave the game during an important story mission there aren't many possibilities for save locking bugs, There is the occasional spinning ragdoll or just bodies inside the ground or weird fall damage but once you get a feel for the game all that suddenly becomes irrelevant and you don't care. Metro stations, Windmills, Bandit camps, Airdrops, Quarantine zones, Side quests, Choices, Parkour, Wearable armor that affects stats, Up gradable weapon upgrades, Para-glider, Parkour skills. Incredible amount of content, People complain about the game being buggy or not having guns? These people played on a trashy computer from 12 years ago and played the game for 2 hours only focusing on main story, Do not listen to these people, And support the developers by buying the game and this game is being very rapidly updated removing bugs and adding new content. Definitely buy, Doesn't have to be now can be whenever."
+        }
+      ],
+      "trailerUrl": "https://www.youtube.com/embed/UwJAAy7tPhE?si=PDPkQ6tOGuIqUJ9h",
+      "tags": ["Action RPG", "Parkour", "Zombie"],
+      "cover": "images2/Covers/DyingLight2-cover.jpeg"
+    },
+    {
+      "id": 10,
+      "name": "Yakuza: Like a Dragon",
+      "description": "Yakuza: Like a Dragon introduces a new protagonist, Ichiban Kasuga, who is a low-ranking member of a yakuza family. After serving an 18-year prison sentence for a crime he did not commit, Ichiban returns to his hometown only to find it in disarray and his former clan in disarray. The game follows Ichiban’s journey as he seeks to uncover the truth behind the betrayal and restore his honor.Unlike previous entries in the series, which used a beat-'em-up combat system, Yakuza: Like a Dragon features a turn-based combat system, blending traditional RPG elements with the series’ signature storytelling and character development. Players engage in strategic battles, recruit party members, and explore the vibrant city of Yokohama. The game is known for its rich narrative, quirky side quests, and a mix of drama and humor.",
+      "price": 30.2,
+      "category": "Adventure",
+      "bg":"images/Yakuza.webp",
+      "platforms": [
+        {
+          "type": "ps5",
+          "image": "images2/ps5/Yakuza.webp",
+          "price": 30.2
+        },
+        {
+          "type": "ps4",
+          "image": "images2/ps4/Yakuza.webp",
+          "price": 19.19
+        },
+        {
+          "type": "xbox one",
+          "image": "images2/xbox-one/Yakuza.webp",
+          "price": 10.74
+        },
+        {
+          "type": "xbox x",
+          "image": "images2/xbox-x/Yakuza.webp",
+          "price": 10.74
+        }
+      ],
+      "releaseDate": "2020-11-10",
+      "developer": "SEGA",
+      "publisher": "SEGA",
+      "rating": "Mature 17+",
+      "reviews": [
+        {
+          "username": "Rescued Rhythms",
+          "rating": 5.0,
+          "comment": "It is rare for me to muster the patience to write reviews about anything but boy does this deserve some credit.A disclaimer however, if turned based JRPG combat is not your thing then don't waste your time. However, if you're looking for a unique, refreshing experience that will crack you up and jerk your tears while being so addictive you'll want to take off days from work just to play more of it, then get up and grab your wallet (seriously)."
+        },
+        {
+          "username": "Ben Gardner",
+          "rating": 5.0,
+          "comment": "Yakuza: Like a Dragon is an incredible game with very unique elements seen occasionally within the Yakuza series. It is mind-blowingly fantastic for everything. The story, the characters, the style and (surprisingly) the combat all fit together perfectly to create a game worthy of completing."
+        }
+      ],
+      "trailerUrl": "https://www.youtube.com/embed/hkygiqC7ulQ?si=Nsc3FfknkwtyXix2",
+      "tags": ["RPG", "Open World", "Adventure"],
+      "cover": "images2/Covers/YakuzaLikeaDragon-cover.jpeg"
+    },
+    {
+      "id": 11,
+      "name": "EA SPORTS FC 24",
+      "description": "EA SPORTS FC™ 24 marks the beginning of the future of football. Built on innovation and authenticity, feel closer to the game in the most true-to-football experience yet with the best players from the biggest clubs, leagues and competitions around the globe. <br> <br> Experience unparalleled realism in every match thanks to three cutting-edge technologies: HyperMotionV, PlayStyles optimized by Opta and the enhanced Frostbite™ Engine <br><br> With more than 19,000 fully licensed players, 700 teams and 30 leagues including the UEFA Men’s and Women’s Champions League, EA SPORTS FC 24 brings unrivalled authenticity to the pitch.",
+      "category": "SPORTS",
+      "bg":"images/fc24-general.avif",
+      "platforms": [
+        {
+          "type": "ps5",
+          "image": "images2/ps5/fc24-ps5.JPEG",
+          "price": 27.99
+        },
+        {
+          "type": "ps4",
+          "image": "images2/ps4/fc24-ps4.JPEG",
+          "price": 32.23
+        },
+        {
+          "type": "xbox one",
+          "image": "images2/xbox-x/fc24-xbox-x-one.JPEG",
+          "price": 30.5
+        },
+        {
+          "type": "xbox x",
+          "image": "images2/xbox-x/fc24-xbox-x-one.JPEG",
+          "price": 30.5
+        }
+      ],
+      "releaseDate": "July 13, 2023",
+      "developer": "EA Vancouver and EA Romania",
+      "publisher": "Electronic Arts",
+      "rating": "5.0",
+      "reviews": [
+        {
+          "username": "Judy",
+          "rating": "5",
+          "comment": "Brought this game for my son. He absolutely loves it . He recommends buying the game. You will love it."
+        },
+        {
+          "username": "Andy McMahon",
+          "rating": "5",
+          "comment": "I'm still playing it with my son, been playing since 1998 on playstation."
+        },
+        {
+          "username": "Kyla Rex",
+          "rating": "5",
+          "comment": "We got this for our boys birthday! They absolutely love it!! The picture and quality of the game is great!! It’s a daily play for our soccer loving boys!"
+        }
+      ],
+      "trailerUrl": "https://www.youtube.com/embed/XhP3Xh4LMA8?si=uDr37MGaZ8F_L1kx",
+      "tags": [
+        "Multiplayer",
+        "Sports ",
+        "Football ",
+        "Simulation ",
+        "Single-Player  "
+      ],
+      "cover": "images2/Covers/FC24-cover.jpeg"
+    },
+    {
+      "id": 12,
+      "name": "NBA 2k24",
+      "bg":"images/nba-general.avif",
+      "description": "Play as your favorite NBA and WNBA teams in NBA 2K24, with fully up-to-date rosters and legendary historic teams. <br><br> Showcase your deep arsenal of moves, with revamped interior defense and dribble combo controls for more rewarding and responsive skill-based gameplay.<br><br> Grab your squad and enjoy pure, authentic hoops action across a variety of modes, including limitless personalized MyPLAYER options in MyCAREER. Collect an impressive array of legends and build your perfect lineup in MyTEAM and more, including new MAMBA MOMENTS™ challenges.<br><br> See you on the court.",
+      "category": "SPORTS",
+      "platforms": [
+        {
+          "type": "ps5",
+          "image": "images2/ps5/nba-ps5.JPEG",
+          "price": 32.93
+        },
+        {
+          "type": "ps4",
+          "image": "images2/ps4/nba-ps4.JPEG",
+          "price": 24.97
+        },
+        {
+          "type": "xbox one",
+          "image": "images2/xbox-one/nba-xbox.JPEG",
+          "price": 18.36
+        },
+        {
+          "type": "xbox x",
+          "image": "images2/xbox-x/nba-xbox-x.JPEG",
+          "price": 19.99
+        }
+      ],
+      "releaseData": "January 1, 2023",
+      "developer": "Visual Concepts Austin",
+      "publisher": "2K",
+      "rating": "4.5",
+      "reviews": [
+        {
+          "username": "dude",
+          "rating": "5",
+          "comment": "Got it faster than I thought and it is in good condition"
+        },
+        {
+          "username": "Latoria johnson",
+          "rating": "4",
+          "comment": "Good and the real thing"
+        },
+        {
+          "username": "Maurice",
+          "rating": "5",
+          "comment": "Great pick up. Once you get use to the game mechanics it’s a great game."
+        }
+      ],
+      "trailerUrl": "https://www.youtube.com/embed/GITzbGIiNKg?si=1vvmjGwBxBTLZIqf",
+      "tags": [
+        "Multiplayer",
+        "Sports",
+        "Basketball",
+        "Singlie-Player",
+        "Simulation"
+      ],
+      "cover": "images2/Covers/nba2k24-cover.jpeg"
+    },
+    {
+      "id": 13,
+      "name": "WWE 2K24",
+      "description": "Join the biggest superstars in sports entertainment as WWE 2K24 presents a retelling of WrestleMania's greatest moments from the last 40 years. <br><br> Take part in some of wrestling's most unforgettable and career-defining matches, choosing from the likes of “Stone Cold” Steve Austin, Undertaker and Andre the Giant, alongside current contenders “The American Nightmare” Cody Rhodes, John Cena, Rhea Ripley and Roman Reigns.",
+      "category": "SPORTS",
+      "bg":"images/wwe-general.AVIF",
+      "platforms": [
+        {
+          "type": "ps5",
+          "image": "images2/ps5/wwe-ps5.JPEG",
+          "price": 35.35
+        },
+        {
+          "type": "ps4",
+          "image": "images2/ps4/wwe-ps4.JPEG",
+          "price": 33.94
+        },
+
+        {
+          "type": "xbox one",
+          "image": "images2/xbox-one/wwe-xbox-one-1.JPEG",
+          "price": 38.95
+        },
+        {
+          "type": "xbox x",
+          "image": "images2/xbox-x/wwe-xbox-x-1.JPEG",
+          "price": 38.95
+        }
+      ],
+      "releaseData": "March 8, 2024",
+      "developer": "Visual Concepts Austin",
+      "publisher": "2K",
+      "rating": "4.6",
+      "reviews": [
+        {
+          "username": "Dan Boshman",
+          "rating": "5",
+          "comment": "very fun game"
+        },
+        {
+          "username": "Bfaust304",
+          "rating": "4",
+          "comment": "4/5 Great gameplay, some aspects of it are buggy still"
+        },
+        {
+          "username": "Deborah Clanton",
+          "rating": "5",
+          "comment": "My son loves this game"
+        }
+      ],
+      "trailerUrl": "https://www.youtube.com/embed/GpuRjErh-e0?si=mpDbndN1QjVxWDL5",
+      "tags": [
+        "Multiplayer",
+        "Sports",
+        "Simulation",
+        "Singlie-Player",
+        "Fighting"
+      ],
+      "cover": "images2/Covers/wwe2k24-cover.jpeg"
+    },
+    {
+      "id": 14,
+      "name": "F1 24",
+      "description": "Get ready to ignite your passion for racing with EA Sports F1® 24. Drive updated 2024 cars with the official F1® lineup of your favorite 20 drivers and 10 teams.<br><br> Unleash your champion in the all-new Driver Career mode or create your dream team and race to win in My Team Career Mode. Compete in split-screen or in the expanded cross-platform multiplayer, and be more social with new Racenet Leagues.<br><br> Feel at one with the car with authentic handling and physics, powered by EA SPORTS Dynamic Handling. The latest improvements give you more control over how your personal driving style impacts your car’s performance and race strategy",
+      "category": "SPORTS",
+      "bg":"images/f1-24-general.avif",
+      "platforms": [
+        {
+          "type": "ps5",
+          "image": "images2/ps5/f1-24-ps5.JPEG",
+          "price": 57.99
+        },
+        {
+          "type": "ps4",
+          "image": "images2/ps4/f1-24-ps4.JPEG",
+          "price": 45.91
+        },
+        {
+          "type": "xbox x",
+          "image": "images2/xbox-x/f1-24-xbox.JPEG",
+          "price": 49.95
+        },
+        {
+          "type": "xbox one",
+          "image": "images2/xbox-x/f1-24-xbox.JPEG",
+          "price": 49.95
+        }
+      ],
+      "releaseData": "February 27, 2024",
+      "developer": "Codemasters",
+      "publisher": "Electronic Arts",
+      "rating": "4.6",
+      "reviews": [
+        {
+          "username": "Need for Speed",
+          "rating": "5",
+          "comment": "Career mode and a few other modes are completely on disc including split screen. Meaning you put it in your PS5 and all you have to do is install it without connecting to the internet and you can play the game. Some bugs here and there but hey it works"
+        },
+        {
+          "username": "Andy Tylor",
+          "rating": "5",
+          "comment": "My son loved this game"
+        },
+        {
+          "username": "James Wilson",
+          "rating": "4",
+          "comment": "it is good and funny."
+        }
+      ],
+      "trailerUrl": "https://www.youtube.com/embed/NnyCWsA6KSI?si=1H2OF9QjFsdHBBsZ",
+      "tags": [
+        "Multiplayer",
+        "Singlie-Player",
+        "SPORTS",
+        "Simulation",
+        "Racing"
+      ],
+      "cover": "images2/Covers/F1-cover.jpeg"
+    },
+    {
+      "id": 15,
+      "name": "Madden NFL 24",
+      "bg":"images/madden24-general.avif",
+      "description": "With the newest iteration of FieldSENSE™*, enjoy an enhanced gameplay foundation that brings all the ways you play between the hash marks to new heights in Madden NFL 24.<br><br> NFL player physicality is on display like never before thanks to all-new SAPIEN Technology*, delivering a leap forward in NFL player authenticity with more body definition and variation to athlete physiques resulting in realistic player movement.",
+      "category": "SPORTS",
+      "platforms": [
+        {
+          "type": "ps5",
+          "image": "images2/ps5/madden24-ps5.JPEG",
+          "price": 44.9
+        },
+        {
+          "type": "ps4",
+          "image": "images2/ps4/madden24-ps4.JPEG",
+          "price": 36.5
+        },
+        {
+          "type": "xbox one",
+          "image": "images2/xbox-x/madden24-xbox-x-one.JPEG",
+          "price": 33.36
+        },
+        {
+          "type": "xbox x",
+          "image": "images2/xbox-x/madden24-xbox-x-one.JPEG",
+          "price": 33.36
+        }
+      ],
+      "releaseData": "Aug 18, 2023",
+      "developer": "EA Tiburon",
+      "publisher": "Electronic Arts",
+      "rating": "4.7",
+      "reviews": [
+        {
+          "username": "Michele Dubois",
+          "rating": "5",
+          "comment": "Family plays with this game everyday and loves it"
+        },
+        {
+          "username": "Andrea Richardson",
+          "rating": "5",
+          "comment": "Don't listen to the negative reviews. This is a much improved game vs. 2023. For me I play the Franchise version of the game and found 2024 to be a much more real world version than previous Madden NFL games. I find the game play is much better and the team management aspect is a dramatic improvement."
+        },
+        {
+          "username": "Brooke J",
+          "rating": "5",
+          "comment": "My bf asked so he shall receive. He hasn’t noticed anything mad quality about the game, looks good to me!"
+        }
+      ],
+      "trailerUrl": "https://www.youtube.com/embed/4o6xDjg2B54?si=dfm02aEk20napc0X",
+      "tags": ["Multiplayer", "Sports", "Simulation", "Singlie-Player"],
+      "cover": "images2/Covers/maddenNFL24-cover.jpeg"
+    },
+    {
+      "id": 16,
+      "name": "Ark: Survival Evolved",
+      "bg":"images/Ark-Survival-Evovled.avif",
+      "description": "As a man or woman stranded naked, freezing, and starving on the shores of a mysterious island called ARK, you must hunt, harvest resources, craft items, grow crops, research technologies, and build shelters to withstand the elements. Use your cunning and resources to kill or tame & breed the leviathan dinosaurs and other primeval creatures roaming the land, and team up with or prey on hundreds of other players to survive, dominate... and escape!",
+      "category": "Survival",
+      "platforms": [
+        {
+          "type": "ps5",
+          "image": "images2/ps5/Ark-Survival-Evolved.jpg",
+          "price": 59.99
+        },
+        {
+          "type": "ps4",
+          "image": "images2/ps4/Ark-Survival-Evolved.jpg",
+          "price": 29.99
+        },
+        {
+          "type": "xbox one",
+          "image": "images2/xbox-one/Ark-Survival-Evolved.jpg",
+          "price": 29.99
+        },
+        {
+          "type": "xbox x",
+          "image": "images2/xbox-x/Ark-Survival-Evolved.jpg",
+          "price": 59.99
+        }
+      ],
+      "releaseDate": "2017-08-29",
+      "developer": "Studio Wildcard",
+      "publisher": "Big Game Publisher",
+      "rating": "ESRB-Teen 13+",
+      "reviews": [
+        {
+          "username": "Jack Burton",
+          "rating": 5.0,
+          "comment": "I've been playing Ark: Survival Evolved for a while now, and I have to say, it's been a wild ride! The game is an absolute blast, especially if you're into survival games with a twist. The idea of taming dinosaurs and surviving in a prehistoric world is just too good to pass up. All in all, Ark: Survival Evolved is an incredible game with tons of content and endless replayability. Just be prepared for a bit of a rough ride in the PvP scene, but if you’re up for the challenge, it’s totally worth it!"
+        },
+        {
+          "username": "Mackenzie92",
+          "rating": 4.0,
+          "comment": "Ark: Survival Evolved is a breathtaking survival game that excels in creating an immersive experience. The ability to tame a vast array of dinosaurs and explore a beautifully crafted world is exhilarating. The graphics are stunning, and the depth of the gameplay keeps me coming back for more. Playing with friends adds an extra layer of fun, and the constant updates bring new content that enhances the experience. It's a must-play for any survival game enthusiast!"
+        }
+      ],
+      "trailerUrl": "https://www.youtube.com/embed/FW9vsrPWujI?si=xD7iwU8L7M2vatAN",
+      "tags": ["Survival", "Multiplayer", "Open-World", "Sandbox"],
+      "cover": "images2/Covers/ArkSurvivalEvolved-cover.jpeg"
+    },
+    {
+      "id": 17,
+      "name": "Dying Light 2",
+      "description": "A thrilling racing game with realistic physics.",
+      "category": "Survival",
+      "bg":"images/Dying-Light-2.avif",
+      "platforms": [
+        {
+          "type": "ps5",
+          "image": "images2/ps5/Dying-Light-2.jpg",
+          "price": 59.99
+        },
+        {
+          "type": "ps4",
+          "image": "images2/ps4/Dying-Light-2.jpg",
+          "price": 39.99
+        },
+        {
+          "type": "xbox one",
+          "image": "images2/xbox-one/Dying-Light-2.jpg",
+          "price": 59.99
+        },
+        {
+          "type": "xbox x",
+          "image": "images2/xbox-x/Dying-Light-2.jpg",
+          "price": 39.99
+        }
+      ],
+      "releaseDate": "2022-02-04",
+      "developer": "Techland",
+      "publisher": "Techland",
+      "rating": "M-Mature 17+",
+      "reviews": [
+        {
+          "username": "Greg Martin ",
+          "rating": 3.5,
+          "comment": "On both PS5 and Xbox Series X, Dying Light 2 manages to hit 60 FPS, but it comes at the cost of resolution. The game drops down to 1080p in Performance mode, though it still looks great. The Xbox Series X does slightly better in Quality mode, pushing to 1900p compared to PS5's 1800p. There's not much difference between the two, but if you want the best possible resolution, Xbox edges out just a bit"
+        },
+        {
+          "username": "Ali Haider ",
+          "rating": 4.0,
+          "comment": " found Dying Light 2 to be pretty consistent across both the PS5 and Xbox Series X. While Xbox does offer a slight bump in resolution in Quality mode, the difference is minimal. The game's massive open world is stunning but demanding, and both consoles handle it well. Ultimately, the experience is solid on either platform, with only minor differences."
+        }
+      ],
+      "trailerUrl": "https://www.youtube.com/embed/KRScQU_bS1s?si=4EA-w2RggY1BRwAr",
+      "tags": ["Survival", "Apocalyptic Adventure", "Action"],
+      "cover": "images2/Covers/DyingLight2-cover.jpeg"
+    },
+    {
+      "id": 18,
+      "name": "Minecraft Legends",
+      "description": "A puzzle adventure game that takes you through a world full of mysteries.",
+      "category": "Survival",
+      "bg":"images/Mindcraft-Legends.avif",
+      "platforms": [
+        {
+          "type": "ps5",
+          "image": "images2/ps5/Minecraft-legends.jpg",
+          "price": 49.99
+        },
+        {
+          "type": "ps4",
+          "image": "images2/ps4/Minecraft-legends.jpg",
+          "price": 39.99
+        },
+        {
+          "type": "xbox one",
+          "image": "images2/xbox-one/Minecraft-legends.jpg",
+          "price": 31.99
+        },
+        {
+          "type": "xbox x",
+          "image": "images2/xbox-x/Minecraft-legends.jpg",
+          "price": 31.99
+        }
+      ],
+      "releaseDate": "2023-04-18",
+      "developer": "Mojang Studios",
+      "publisher": "Mojang Studios",
+      "rating": "E-Everyone 10+",
+      "reviews": [
+        {
+          "username": "Jonathon Dornbush",
+          "rating": 4.7,
+          "comment": "MC Legends offers a unique blend of adventure and strategy, with its engaging mechanics and immersive world. The game's creative approach to its genre sets it apart from others on the market."
+        },
+        {
+          "username": "Richard Wakeling",
+          "rating": 4.0,
+          "comment": "With its intricate gameplay and captivating narrative, MC Legends delivers an experience that fans of the genre will appreciate. The attention to detail in its design enhances the overall enjoyment of the game."
+        }
+      ],
+      "trailerUrl": "https://www.youtube.com/embed/1JSjZqV-YK8?si=x4hSvsEzEdrgwZ-R",
+      "tags": ["Strategy Game", "Action-Adventure", "Survival"],
+      "cover": "images2/Covers/MinecraftLegends-cover.jpeg"
+    },
+    {
+      "id": 19,
+      "name": "No Man's Sky",
+      "description": "No Man's Sky is an epic science fiction adventure set across an infinite universe, where every star is the light of a distant sun, orbited by planets filled with life. Players can explore unknown worlds, discover unique lifeforms, and engage in trade, combat, and survival on a galactic scale. The game features a mysterious pulse at the center of the galaxy, drawing players into a journey filled with danger and discovery.",
+      "category": "Survival",
+      "bg":"images/No-Man's-Sky.avif",
+      "platforms": [
+        {
+          "type": "ps5",
+          "image": "images2/ps5/No-Man's-Sky.jpeg",
+          "price": 59.99
+        },
+        {
+          "type": "ps4",
+          "image": "images2/ps4/No-Man's-Sky.jpg",
+          "price": 49.99
+        },
+        {
+          "type": "xbox one",
+          "image": "images2/xbox-one/No-Man's-Sky.jpg",
+          "price": 49.99
+        },
+        {
+          "type": "xbox x",
+          "image": "images2/xbox-x/No-Man's-Sky.jpg",
+          "price": 59.99
+        }
+      ],
+      "releaseDate": "2016-08-09",
+      "developer": "Hello Game​s",
+      "publisher": "Hello Games LTD",
+      "rating": "T-Teen",
+      "reviews": [
+        {
+          "username": "BowTiesAreCool",
+          "rating": 3.8,
+          "comment": "I think it's important to mention the sound design of No Man's Sky. Whether it's the procedural soundtrack that subtly weaves in and out, similar to Breath of the Wild, or the eerie calls of alien creatures that either fill you with wonder or dread, the audio experience is truly top-notch. The sound of another ship—possibly another human player—whooshing by adds a whole new layer of immersion, especially when you're wearing headphones. The sound design and the soundtrack are critical to the overall experience."
+        },
+        {
+          "username": "PanFriedSoup",
+          "rating": 2.5,
+          "comment": "I gave No Man's Sky another shot this past weekend on the PS5 after trying it out on the PS4 when it first launched. Despite the updates and improvements, I still can't get into it. Personally, I find Subnautica to be a more engaging survival simulator, particularly because of the lore they've created within that single world. But hey, I hope fans of No Man's Sky are enjoying what it has to offer."
+        }
+      ],
+      "trailerUrl": "https://www.youtube.com/embed/aCgWabJssVI?si=l9ARVfHR-2Y75dCv",
+      "tags": ["Sci-Fi", "Exploration", "Open World", "Survival"],
+      "cover": "images2/Covers/NoMansSky.jpeg"
+    },
+    {
+      "id": 20,
+      "name": "Subnautica: Below Zero",
+      "description": "From the award-winning studio, Unknown Worlds Entertainment, presents the return to the world of 4546B with Subnautica: Below Zero. Dive into a freezing underwater adventure on an alien planet. Set one year after the original Subnautica, Below Zero challenges you to survive the icy biomes both above and below the surface. Craft tools, scavenge for supplies, and unravel the next chapter in the Subnautica story",
+      "category": "Survival",
+      "bg":"images/Subnautica-Below-Zero.jpeg",
+      "platforms": [
+        {
+          "type": "ps5",
+          "image": "images2/ps5/Subnautica-Below-Zero.jpg",
+          "price": 29.99
+        },
+        {
+          "type": "ps4",
+          "image": "images2/ps4/Subnautica-Below-Zero.jpg",
+          "price": 19.99
+        },
+        {
+          "type": "xbox one",
+          "image": "images2/xbox-one/Subnautica-Below-Zero.jpg",
+          "price": 19.99
+        },
+        {
+          "type": "xbox x",
+          "image": "images2/xbox-x/Subnautica-Below-Zero.jpg",
+          "price": 29.99
+        }
+      ],
+      "releaseDate": "2021-05-14",
+      "developer": "Unknown Worlds Entertainment",
+      "publisher": "Bandai Namco Entertainment",
+      "rating": "E-Everyone 10+",
+      "reviews": [
+        {
+          "username": " Jane D.",
+          "rating": 5.0,
+          "comment": "Subnautica: Below Zero delivers an immersive underwater experience with stunning visuals and challenging survival mechanics. The sense of discovery keeps you hooked from start to finish."
+        },
+        {
+          "username": "Alex W.",
+          "rating": 4.7,
+          "comment": "An excellent follow-up to the original, Below Zero expands on the mystery and wonder of the alien planet, with impressive next-gen enhancements that make exploring the icy biomes a visual treat."
+        }
+      ],
+      "trailerUrl": "https://www.youtube.com/embed/rA7BRa9_Lu4?si=JJ4L9AyJv6Dt7YMo",
+      "tags": ["Sci-Fi", "Survival", "Open World", "Underwater Adventure"],
+      "cover": "images2/Covers/SubnauticaBelowZero-cover.jpeg"
+    }
+  ]
+}

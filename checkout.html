@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+  <body>
+    <header>
+      <!-- link back to home page -->
+      <div>
+        <a href="#">Keep Shopping</a>
+      </div>
+    </header>
+    <div class="main">
+      <div class="list-product"></div>
+
+      <div class="checkout">
+        <h1>Checkout</h1>
+        <form id="checkout-form">
+          <div>
+            <label for="full_name">Full Name</label>
+            <input type="text" id="full_name" name="full_name" required />
+          </div>
+          <div>
+            <label for="phone_number">Phone Number</label>
+            <input
+              type="tel"
+              id="phone_number"
+              name="phone_number"
+              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              required
+            />
+          </div>
+          <div>
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" required />
+          </div>
+          <div>
+            <label for="governorate">Governorate</label>
+            <select id="governorate" name="governorate">
+              <option value="beirut">Beirut</option>
+              <option value="mount_lebanon">Mount Lebanon</option>
+              <option value="north">North</option>
+              <option value="south">South</option>
+              <option value="keserwan_jbeil">Keserwan-Jbeil</option>
+              <option value="nabatieh">Nabatieh</option>
+              <option value="beqaa">Beqaa</option>
+              <option value="akkar">Akkar</option>
+              <option value="baalbek_hermel">Baalbek-Hermel</option>
+            </select>
+          </div>
+
+          <div class="invoice">
+            <p>Total Quantity</p>
+            <strong id="total-quantity"></strong>
+            <p>Total Price</p>
+            <strong id="total-price"></strong>
+          </div>
+
+          <button type="submit" onclick="downloadJSON(event)">Checkout</button>
+        </form>
+      </div>
+    </div>
+    <script src="checkout.js"></script>
+  </body>
+</html>

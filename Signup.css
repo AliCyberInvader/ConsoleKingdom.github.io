@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family-Poppins:wght@300;400;500;700;800;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Popp',sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('images/b.jpg') no-repeat center center fixed;
+    background-size: cover;
+
+}
+.wrapper {
+    position: relative;
+    width: 750px;
+    height: 700px;
+    background: #000000;
+    border: 2px solid #0ef;  
+    box-shadow: 
+      0 0 15px #0ef,    /* Blue shadow */
+      0 0 30px #0ef,    /* Blue shadow */
+      0 0 45px #00ff00, /* Green shadow */
+      0 0 60px #00ff00; /* Green shadow */
+    overflow: hidden;
+  }
+  
+.wrapper .form-box.signup{
+right: 0;
+padding: 0 60px 0 40px ;
+}
+.wrapper .form-box{
+position: absolute;                                 
+    top: 0;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+}
+.form-box h2{
+    font-size: 32px;
+    color: #fff;
+    text-align: center;
+}
+.form-box .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 25px 0;
+}
+.input-box input{
+    width: 100%;
+    height:100% ;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    padding-right: 23px;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.input-box input:focus,
+.input-box input:valid{
+   border-bottom-color:#0ef ;
+   
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
+    color: #0ef;
+}
+.input-box i{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #fff;
+    transition: 0.5s;
+}
+.input-box input:focus~i,
+.input-box input:valid~i{
+  color: #0ef;
+}
+.btn{
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border:2px solid #0ef;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #fff;
+    z-index: 1;
+    overflow: hidden;
+}
+.btn::before{
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    background: linear-gradient( #000000, rgb(68, 255, 0), #000000, #000000); 
+    z-index: -1;
+    transition: 0.5s;
+}
+.btn.facebook::before {
+    background: linear-gradient( #000000, #0ef, #000000, #000000); 
+}
+
+.btn.google::before {
+    background: linear-gradient( #000000, #0ef, #000000, #000000); 
+}
+
+.btn:hover::before{
+    top: 0;
+}
+.form-box .logreg-link{
+   font-size:14.5px;
+   color: #fff;
+   text-align: center;
+   margin: 20px 0 10px;
+}
+.logreg-link p a{
+    color: #0ef;
+    text-decoration: none;
+    font-weight: 600; 
+}
+.logreg-link p a:hover{
+    text-decoration: underline;
+}  
+
+.wrapper .bg-animate {
+    position: absolute;
+    left: -50px; 
+    top: 50px; 
+    width: 70%; 
+    height: 80%; 
+    background: url("images/consolekingdom1.png") no-repeat center center;
+    background-size: 80%; 
+}
+
+@media (max-width: 767px){
+    body{
+      min-height: 100vh;
+      background-size: cover;
+    }
+   
+    .wrapper .form-box.signup{
+      padding: 0 30px 0 5px ;
+    }
+   
+    .form-box h2{
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+    .info-text h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .info-text p{
+        text-align: center;
+    }
+    .wrapper .form-box{
+        width: 90%;
+        height: 100%;
+    }
+    .wrapper {
+        position: relative;
+        width: 100%; 
+        height: 100%; 
+    }
+    
+    .wrapper .bg-animate {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        width: 85%;
+        height: 80%; 
+        background: url("images/consolekingdom1.png") no-repeat center center;
+        background-size: 80%; 
+        transform: translate(-50%, -50%); 
+        filter: blur(3px);
+    }
+    
+    
+    .form-box .input-box{
+        margin: 15px 0;
+    }
+  }
+ 
+
+/* Updated styles for the custom alert and password strength alert */
+#custom-alert, #password-strength-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 15px #0ef;
+}
+
+#custom-alert .custom-alert-content, #password-strength-alert .custom-alert-content {
+    color: #fff;
+}
+
+#custom-alert-button, #password-strength-button {
+    margin-top: 20px;
+    background: transparent;
+    border: 2px solid #0ef;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#custom-alert-button:hover, #password-strength-button:hover {
+    background-color: #0ef;
+    color: #000;
+}
+
+/* Hide the alert initially */
+.hidden {
+    display: none;
+}
+
+.input-box i.bx-show,.input-box i.bx-hide {
+    position: absolute;
+    top: 50%;
+    right: 20;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.input-box input[type="password"] + i.bx-show ,.input-box input[type="password"] + i.bx-hide {
+    display: inline;
+}
+.input-box input[type="password"]:focus + i.bx-show,
+.input-box input[type="password"]:valid + i.bx-show {
+    color: #0ef;
+}
+

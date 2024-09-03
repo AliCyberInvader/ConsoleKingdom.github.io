@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console Kingdom</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images\consolekingdom1.png" alt="Console Kingdom Logo">
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#!" id="categoriesLink">Categories</a>
+                        <ul class="dropdown" id="categoryList">
+                            <li><a href="index.html#action-category">Action</a></li>
+                            <li><a href="index.html#sports-category">Sports</a></li>
+                            <li><a href="index.html#survival-category">Survival</a></li>
+                            <li><a href="index.html#adventure-category">Adventure</a></li>
+                        </ul></li>
+                    <li><a href="aboutUs.html" target="_blank">About</a></li>
+                </ul>
+            </nav>
+           
+            <div class="header-actions">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search for games..." id="search-bar">
+                </div>
+                <div class="user-menu" id="user-menu">
+                    <a href="login.html" class="login-link">Login</a>
+                    <a href="Singup.html" class="signup-link">Sign Up</a>
+                </div>
+                <div class="cart-icon">
+                    <a href="cart.html">
+                        <img src="images\cart-removebg-preview.png" alt="Cart">
+                        <span class="cart-count" id="cart-count">0</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+
+    
+ <main id="big-container">
+    <div class="main-content" id="main-content">
+
+        <section class="recommendations">
+            <h2>Best seller</h2>
+            <div class="recommended-games" id="recommended-games">
+                <div class="game-card" data-id="2">
+                    <img src="images\gta5.png" alt="Game 1">
+                    <h3>Grand Theft Auto V </h3>
+                </div>
+                <div class="game-card" data-id="8">
+                    <img src="images/The Witcher 3.webp" alt="Game 2">
+                    <h3>The Witcher 3</h3>
+                    
+                </div> 
+                <div class="game-card" data-id="1">
+                    <img src="images/codColWar.webp" alt="Game 3">
+                    <h3>Call Of Duty Cold War</h3>
+                </div>
+            </div>
+        </section>
+
+   
+    <div class="products-container" id="products">
+        <div class="category-section" id="action-category">
+            <h2>Action Games</h2>
+            <div class="games-grid">
+                <!-- Action games will be dynamically inserted here -->
+            </div>
+        </div>
+    
+        <div class="category-section" id="sports-category">
+            <h2>Sports Games</h2>
+            <div class="games-grid">
+               
+            </div>
+        </div>
+    
+        <div class="category-section" id="survival-category">
+            <h2>Survival Games</h2>
+            <div class="games-grid">
+              
+            </div>
+        </div>
+    
+        <div class="category-section" id="adventure-category">
+            <h2>Adventure Games</h2>
+            <div class="games-grid">
+                
+            </div>
+        </div>
+    </div>
+    <section class="best-deals">
+        <h2>Best Deals</h2>
+        <div class="slider">
+          <div id="bundles-container" class="bundles-container">
+           
+          </div>
+        </div>
+      </section>
+    </div>
+    
+</main>
+    <footer class="main-footer" id="footer">
+        <div class="footer-container">
+            <div class="footer-section about">
+                <h3>Console Kingdom</h3>
+                <p>Your one-stop shop for all console games. We provide the best deals on the latest and greatest video games across all platforms.</p>
+            </div>
+            <div class="footer-section quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="aboutUs.html" target="_blank">About Us</a></li>
+                    <li><a href="https://web.whatsapp.com/" target="_blank">Contact Us</a></li>
+                    <li><a href="PrivacyPolicy.html" target="_blank">Privacy Policy</a></li>
+                    <li><a href="PrivacyPolicy.html" target="_blank">Terms & Conditions</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social-media">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/" target="_blank"><img src="images/icons8-facebook-50.png" alt="Facebook" > Facebook</a></li>
+                    <li><a href="https://x.com/" target="_blank"><img src="images/icons8-twitter-50.png" alt="Twitter"> Twitter</a></li>
+                    <li><a href="https://www.instagram.com/" target="_blank"><img src="images/icons8-instagram-50.png" alt="Instagram"> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Console Kingdom. All rights reserved.</p>
+        </div>
+    </footer>
+    <div id="menu&filter">
+    <button id="menu-btn" class="menu-btn">&#9776; Menu</button>
+    <button id="filter-btn" class="filter-btn">&#9650; filter</button>
+
+    
+    <div id="slide-up-menu" class="slide-up-menu">
+        <a href="index.html">HOME</a>
+        <a  id="changePass">CHANGE PASSWORD</a>
+        <a href="PrivacyPolicy.html" target="_blank">PRIVACY & POLICY</a>
+        <a href="aboutUs.html" target="_blank">ABOUT</a>
+        <a href="PrivacyPolicy.html" target="_blank">TERMS & CONDITIONS</a>
+        <a href="https://web.whatsapp.com/" target="_blank">CONTACT</a>
+        <a href="javascript:void(0)" class="close-btn" id="close-btn">&times;</a>
+    </div>
+   
+    <div id="filter-slide-up-menu" class="filter-slide-up-menu">
+        <aside class="sidebar">
+            
+            <div class="filter-section">
+                <h4>type</h4>
+                <input type="radio" id="ps5"  value="ps5" name="platform" checked><label for="ps5">ps5</label>
+                <input type="radio" id="ps4" value="ps4" name="platform" ><label for="ps4" >ps4</label>
+                <input type="radio" id="xbox1" value="xbox1" name="platform"><label for="xbox1">xbox 1</label>
+                <input type="radio" id="xboxX" value="xbobxX" name="platform"><label for="xboxX">xbox x</label>
+            </div>
+            
+            <div class="filter-section">
+                <h4>Price</h4>
+                <label for="maxPrice">Max Price: </label>
+                <input type="range" id="maxPrice" min="0" max="100" value="100" step="1">
+                <span id="priceDisplay">100</span>
+            </div>
+            
+            <div class="filter-section">
+                <h4>Categories</h4>
+                    <input type="checkbox" id="action" name="categ"><label for="action">Action</label>
+                    <input type="checkbox" id="adventure" name="categ"><label for="adventure">Adventure</label>
+                    <input type="checkbox" id="survival" name="categ"><label for="survival">survival</label>
+                    <input type="checkbox" id="sports" name="categ"><label for="sports">Sports</label>
+            
+            </div>
+        </aside>
+        <div class="filter-btns">
+        <a href="javascript:void(0)" class="filter-confirm-btn" id="filter-confirm-btn">&#128504;</a>
+        <a href="javascript:void(0)" class="filter-close-btn" id="filter-close-btn">&times;</a>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div id="cart-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn-cart">&times;</span>
+      <p>Item added to cart!</p>
+    </div>
+  </div>
+  <!-- Modal -->
+<div id="notLoggedIn-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn-cart" id="close-btn-logg">&times;</span>
+      <p>Please <a href="login.html">login</a> before proceeding</p>
+    </div>
+  </div>
+  
+</body>
+<script src="index.js"></script>
+</html>
