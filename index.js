@@ -233,7 +233,7 @@ function loadItems(products){
             gameCard.classList.add("game-card1");
             gameCard.style.att
             gameCard.setAttribute('data-id',game.id);
-            gameCard.addEventListener("click",()=>{window.location.href='itemdetails.html?id='+game.id})
+            gameCard.addEventListener("click",()=>{window.location.href='itemDetails.html?id='+game.id})
             gameCard.innerHTML = `
                 <img src="${game.bg}"">
                 <h3>${game.name}</h3>
@@ -346,7 +346,7 @@ function displaySearchResults(products) {
     products.forEach(product => {
         const productCard = document.createElement("div");
         productCard.classList.add("game-card1");
-        productCard.addEventListener("click",()=>window.location.href="itemdetails.html?id="+product.id);
+        productCard.addEventListener("click",()=>window.location.href="itemDetails.html?id="+product.id);
         productCard.innerHTML = `
             <img src="${product.bg}" alt="${product.name}">
             <h3>${product.name}</h3>

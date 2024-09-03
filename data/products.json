@@ -106,7 +106,7 @@
     {
       "id": 3,
       "name": "Marvel’s Guardians of the Galaxy",
-      "bg":"images/marvel.AVIF",
+      "bg":"images/marvel.avif",
       "description": "Fire up a wild ride across the cosmos with a fresh take on Marvel’s Guardians of the Galaxy. In this third-person action-adventure game, you are Star-Lord, and thanks to your bold yet questionable leadership, you have persuaded an oddball crew of unlikely heroes to join you. Some jerk (surely not you) has set off a chain of catastrophic events, and only you can hold the unpredictable Guardians together long enough to fight off total interplanetary meltdown. Use Element Blasters, tag-team beat downs, jet boot-powered dropkicks, nothing’s off-limits.",
       "category": "Action",
       "platforms": [
@@ -154,7 +154,7 @@
     {
       "id": 4,
       "name": "Outriders",
-      "bg":"images/OUTRIDERS.AVIF",
+      "bg":"images/OUTRIDERS.avif",
       "description": "Outriders is a 1-3 player co-op RPG shooter set in an original, dark and desperate sci-fi universe. As mankind bleeds out in the trenches of enoch, you'll create your own outrider and embark on a journey across the hostile planet. With rich storytelling spanning a diverse world, you'll leave behind the slums and shanty towns of the first city and traverse forests, mountains and desert in the pursuit of a mysterious signal. Combining intense gunplay with violent powers and an arsenal of increasingly twisted weaponry and gear-sets, outriders offers countless hours of gameplay from one of the finest shooter developers in the industry - people can fly.",
       "category": "Action",
       "platforms": [

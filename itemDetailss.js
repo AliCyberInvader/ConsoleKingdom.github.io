@@ -349,7 +349,7 @@ function displaySearchResults(products) {
   products.forEach(product => {
       const productCard = document.createElement("div");
       productCard.classList.add("game-card1");
-      productCard.addEventListener("click",()=>window.location.href="itemdetails.html?id="+product.id);
+      productCard.addEventListener("click",()=>window.location.href="itemDetails.html?id="+product.id);
       productCard.innerHTML = `
           <img src="${product.bg}" alt="${product.name}">
           <h3>${product.name}</h3>
