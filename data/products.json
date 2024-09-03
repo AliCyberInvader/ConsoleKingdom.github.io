@@ -396,53 +396,53 @@
     },
     {
       "id": 9,
-      "name": "Dying Light 2",
-      "description": "Set in a post-apocalyptic world where a viral outbreak has turned most of humanity into infected monsters, Dying Light 2 Stay Human takes place 15 years after the events of the original game. Players assume the role of Aiden Caldwell, a survivor with extraordinary parkour abilities and combat skills. The game focuses on exploration, survival, and narrative choices, allowing players to shape the world around them through their decisions.",
+      "name": "Elden Ring",
+      "description": "In the Lands Between ruled by Queen Marika the Eternal, the Elden Ring, the source of the Erdtree, has been shattered.<br>Marika's offspring, demigods all, claimed the shards of the Elden Ring known as the Great Runes, and the mad taint of their newfound strength triggered a war: The Shattering. A war that meant abandonment by the Greater Will.<br>And now the guidance of grace will be brought to the Tarnished who were spurned by the grace of gold and exiled from the Lands Between.<br>Ye dead who yet live, your grace long lost, follow the path to the Lands Between beyond the foggy sea to stand before the Elden Ring.<br>And become the Elden Lord.",
       "price": 32.98,
       "category": "Adventure",
-      "bg":"images/Dying-Light-2.avif",
+      "bg": "images/elden-ring-poster.jpeg",
       "platforms": [
         {
           "type": "ps5",
-          "image": "images2/ps5/Dying-Light-2.jpg",
+          "image": "images2/ps5/elden-ring-ps5.jpg",
           "price": 28.39
         },
         {
           "type": "ps4",
-          "image": "images2/ps4/Dying Light 2.webp",
+          "image": "images2/ps4/elden-ring-ps4.jpg",
           "price": 19.99
         },
         {
           "type": "xbox one",
-          "image": "images2/xbox-one/Dying Light 2.webp",
+          "image": "images2/xbox-one/elden-ring-xbox-one-and-x.jpg",
           "price": 32.98
         },
         {
           "type": "xbox x",
-          "image": "images2/xbox-x/Dying Light 2.webp",
+          "image": "images2/xbox-x/elden-ring-xbox-one-and-x.jpg",
           "price": 32.98
         }
       ],
-      "releaseDate": "2022-02-04",
-      "developer": "Techland",
-      "publisher": "Techland Publishing",
+      "releaseDate": "2022-02-25",
+      "developer": "FromSoftware",
+      "publisher": "Bandai Namco Entertainment",
       "rating": "Mature 17+",
       "reviews": [
         {
-          "username": "Mikel Roush",
+          "username": "MajesticZebra",
           "rating": 5.0,
-          "comment": "After two hours I can say this new game is great. The combat is a more refined version of the original but you don't run out of stamina after 3 swings now. The parkour is more fluid than the original (although it can look kind of floaty  occasionally). The graphics are polished and pretty, definately uses the power of the ps5 well. The side characters voice actors don't sound as stiff as in the original however the main character Aiden sounds a lot like Kyle Crane. All together I am enjoying the game and can't wait to continue."
+          "comment": "Elden Ring is an absolute masterpiece in every sense. The open world is breathtaking, with each region offering its own unique challenges and beauty. The bosses are tough but rewarding, and every victory feels earned. The customization options are vast, letting you tailor your character to your playstyle. It's one of those games that will keep you coming back, even after you've finished the main story."
         },
         {
-          "username": "Igor Dizhevskii",
+          "username": "KnightedWarrior",
           "rating": 5.0,
-          "comment": "I paid $90 CAD for this game and I think it's definitely worth it after completing story twice with 67 hours. I've been waiting for so long and now that it is here it's amazing. So much content compared to dying light 1, Definitely some bugs here and there but as long as you don't leave the game during an important story mission there aren't many possibilities for save locking bugs, There is the occasional spinning ragdoll or just bodies inside the ground or weird fall damage but once you get a feel for the game all that suddenly becomes irrelevant and you don't care. Metro stations, Windmills, Bandit camps, Airdrops, Quarantine zones, Side quests, Choices, Parkour, Wearable armor that affects stats, Up gradable weapon upgrades, Para-glider, Parkour skills. Incredible amount of content, People complain about the game being buggy or not having guns? These people played on a trashy computer from 12 years ago and played the game for 2 hours only focusing on main story, Do not listen to these people, And support the developers by buying the game and this game is being very rapidly updated removing bugs and adding new content. Definitely buy, Doesn't have to be now can be whenever."
+          "comment": "This game is nothing short of a journey. The world of Elden Ring is massive and filled with secrets around every corner. The combat is challenging but fair, making every encounter thrilling. The lore is deep, and piecing it together feels like solving a grand puzzle. However, it's not for the faint of heart; you'll die a lot, but that's part of the experience."
         }
       ],
-      "trailerUrl": "https://www.youtube.com/embed/UwJAAy7tPhE?si=PDPkQ6tOGuIqUJ9h",
-      "tags": ["Action RPG", "Parkour", "Zombie"],
-      "cover": "images2/Covers/DyingLight2-cover.jpeg"
-    },
+      "trailerUrl": "https://www.youtube.com/embed/e5wwSxl0atc?si=rIOQUDt9gHDv0rCW",
+      "tags": ["Action RPG", "Fantasy Adventure", "Challenging Combat"],
+      "cover": "images2/Covers/elden-ring-cover.jpeg"
+    }, 
     {
       "id": 10,
       "name": "Yakuza: Like a Dragon",

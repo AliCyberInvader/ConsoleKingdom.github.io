@@ -23,14 +23,10 @@ body {
     height: 700px;
     background: #000000;
     border: 2px solid #0ef;
-    box-shadow:
-        0 0 15px #0ef,
-        /* Blue shadow */
-        0 0 30px #0ef,
-        /* Blue shadow */
-        0 0 45px #00ff00,
-        /* Green shadow */
-        0 0 60px #00ff00;
+    box-shadow: 0 0 15px rgb(0, 0, 0), 
+                0 0 30px rgb(82, 245, 218), 
+                0 0 45px #00fbff, 
+                0 0 60px #1e00ff;
     /* Green shadow */
     overflow: hidden;
 }
@@ -278,4 +274,29 @@ body {
 .input-box input:focus~.toggle-password,
 .input-box input:valid~.toggle-password {
     color: #0ef;
+}
+/* Prevents autofill from changing the font color or weight */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    font-family: 'Poppins', sans-serif; /* Ensures the same font family */
+    -webkit-text-fill-color: #fff !important; /* Sets text color to white */
+    font-weight: 500 !important; /* Ensures the font weight remains consistent */
+    transition: background-color 5000s ease-in-out 0s; /* Prevents background color change */
+    background-clip: text; /* Keeps the text visible */
+}
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.wrapper {
+    opacity: 0;
+    animation: fadeInSlideUp 2s ease forwards;
 }

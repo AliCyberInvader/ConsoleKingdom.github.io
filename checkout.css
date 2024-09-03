@@ -4,7 +4,7 @@
 }
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(36, 35, 35);
+  background-color: #f4f4f4;
   color: #fff;
 }
 header div {
@@ -30,28 +30,27 @@ header a {
 }
 .list-product h1 {
   margin-bottom: 30px;
+  color: #333;
 }
 
 .list-product .product {
   width: 50%;
   display: grid;
-  
   grid-template-columns: 50% 10% 10% 30%;
   align-items: center;
   gap: 20px;
   margin-bottom: 30px;
   padding: 5px 15px;
   box-shadow: 0 0px 3px #fff;
-  background-color: rgb(46, 47, 112);
+  background-color: #333;
   border-radius: 10px;
 }
 
 .checkout {
   padding: 20px;
   padding-top: 0%;
-  border: 1px solid blue;
   border-radius: 25px;
-  background-color: rgba(0, 2, 107, 0.2);
+  background-color: #333;
   width: 60%;
 }
 .checkout h1 {
@@ -65,8 +64,21 @@ select {
   border: none;
   background-color: rgb(255, 255, 255, 0.1);
   margin-bottom: 20px;
-  padding: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 8px;
   color: #fff;
+}
+
+#radio-group {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+input[type="radio"] {
+  width: 20px;
+  height: 20px;
 }
 
 .checkout form input:focus,
@@ -81,12 +93,13 @@ select:focus {
 
 .checkout button {
   width: 100%;
+  height: 50px;
   margin-top: 20px;
   padding: 8px;
   background-color: rgb(54, 57, 223);
   border: none;
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 20px;
   color: #fff;
   cursor: pointer;
 }
@@ -103,4 +116,10 @@ select:focus {
 
 .invoice strong {
   text-align: end;
+}
+/* Additional Styles */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
 }

@@ -1,161 +1,154 @@
 let games = {
   games: [],
 };
-
-
-let productID = new URLSearchParams(window.location.search).get('id');
+localStorage.setItem("console", "ps5");
+let productID = new URLSearchParams(window.location.search).get("id");
 window.addEventListener("storage", function (event) {
-  if (event.key === "productsArr" || event.key==="bundlesArr") {
-      updateCartCount();
+  if (event.key === "productsArr" || event.key === "bundlesArr") {
+    updateCartCount();
   }
 });
 
+document.addEventListener("DOMContentLoaded", async () => {
+  let closeLoginModalBtn=document.getElementById("close-btn-logg");
+  closeLoginModalBtn.addEventListener("click",()=>document.getElementById("notLoggedIn-modal").style.display="none");
+  let closeCartModalBtn=document.getElementById("close-btn-cart");
+  closeCartModalBtn.addEventListener("click",()=>document.getElementById("cart-modal").style.display="none");
+  // Generate two distinct random numbers between 1 and 4
+  let rand_number = Math.floor(Math.random() * 4) + 1;
+  let rand_number2 = Math.floor(Math.random() * 4) + 1;
 
-document.addEventListener("DOMContentLoaded",async ()=>{
-   // Generate two distinct random numbers between 1 and 4
-   let rand_number = Math.floor(Math.random() * 4) + 1;
-   let rand_number2 = Math.floor(Math.random() * 4) + 1;
- 
-   // Ensure the numbers are not equal
-   while(rand_number === rand_number2) {
-     rand_number2 = Math.floor(Math.random() * 4) + 1;
-   }
-  let originalContent;  
-  try{
-  const response = await fetch("data/products.json");
-  if (!response.ok) {
-    throw new Error(`HTTP error! Status: ${response.status}`);
-}
-  const data = await response.json();
-  const products = data.games;
+  // Ensure the numbers are not equal
+  while (rand_number === rand_number2) {
+    rand_number2 = Math.floor(Math.random() * 4) + 1;
+  }
+  let originalContent;
+  try {
+    const response = await fetch("data/products.json");
+    if (!response.ok) {
+      throw new Error(`HTTP error! Status: ${response.status}`);
+    }
+    const data = await response.json();
+    const products = data.games;
 
-  originalContent = document.getElementById("big-container").innerHTML;
+    originalContent = document.getElementById("big-container").innerHTML;
 
-  const searchBar = document.getElementById("search-bar");
-  searchBar.addEventListener("input",async function(event) {
+    const searchBar = document.getElementById("search-bar");
+    searchBar.addEventListener("input", async function (event) {
       const query = event.target.value.trim().toLowerCase();
       if (query === "") {
-          restoreOriginalContent(originalContent);
-          loadGames(productID,products);
-          loadBundles(rand_number,rand_number2);
-          
-        
+        restoreOriginalContent(originalContent);
+        loadGames(productID, products);
+        loadBundles(rand_number, rand_number2);
       } else {
-          searchProducts(products, query);
+        searchProducts(products, query);
       }
-  });
-  
- await loadBundles(rand_number,rand_number2);
-await loadGames(productID,products);
-updateCartCount();
-document.getElementById("bundle1-button").addEventListener("click",()=>addBundlesToCart(rand_number));
-    document.getElementById("bundle2-button").addEventListener("click",()=>addBundlesToCart(rand_number2));
-    var dropdown = document.getElementById('categoryList');
-    dropdown.style.display = 'none'; 
+    });
 
-    document.getElementById('categoriesLink').addEventListener('click', function(event) {
-      event.preventDefault(); 
-      if (dropdown.style.display === 'block') {
-          dropdown.style.display = 'none';
-      } else {
-          dropdown.style.display = 'block';
-      }
-  });
-}catch(error){
-  console.error('Error loading products:', error);
-}
+    await loadBundles(rand_number, rand_number2);
+    await loadGames(productID, products);
+    updateCartCount();
 
+    var dropdown = document.getElementById("categoryList");
+    dropdown.style.display = "none";
+
+    document
+      .getElementById("categoriesLink")
+      .addEventListener("click", function (event) {
+        event.preventDefault();
+        dropdown.style.display =
+          dropdown.style.display === "block" ? "none" : "block";
+      });
+  } catch (error) {
+    console.error("Error loading products:", error);
+  }
+  const loggedINusername=localStorage.getItem('username');
+    if(isUserLoggedIn()){
+document.getElementById("user-menu").innerHTML=
+`<h2>Welcome ${loggedINusername}</h2>
+  <a class="signup-link" id="logOut">Log out</a>
+`;
+document.getElementById("logOut").addEventListener("click",()=>{  
+    localStorage.setItem('isLoggedIn', 'false');
+    localStorage.removeItem('username');
+    localStorage.removeItem('bundlesArr');
+    localStorage.removeItem('productsArr');
+
+    location.reload(true);
+    
 })
+    }
+});
 
-
-
-
-
-
-
-async function loadGames(productId,products) { 
+async function loadGames(productId, products) {
   try {
-   
-
     let product = products.find((item) => item.id == productId);
 
     if (product) {
-      // for the background image
+      // Background image
       const backgroundElement = document.querySelector(".background");
       const coverImagePath = product.cover;
 
       backgroundElement.style.backgroundImage = `
         linear-gradient(
-        to top, rgba(0,0,0,1),
-        rgba(0,0,0,0.7)20%,
-        rgba(0,0,0,0.5) 40%,
-        rgba(0,0,0,0.2) 60%, rgba(0,0,0,0) 100%),
+          to top, rgba(0,0,0,1),
+          rgba(0,0,0,0.7) 20%,
+          rgba(0,0,0,0.5) 40%,
+          rgba(0,0,0,0.2) 60%, rgba(0,0,0,0) 100%),
         url('${coverImagePath}')
       `;
 
-      // name of game
+      // Game details
       document.getElementById("product-name").textContent = product.name;
-
-      // description of the game
       document.getElementById("product-description").innerHTML =
         product.description;
-
-      // price ps5 by default
       document.getElementById(
         "product-price"
       ).textContent = `$${product.platforms[0].price}`;
+      document.getElementById("PS5").classList.add("white");
 
-      // buttons changes
+      // Button changes
       const buttons = document.querySelectorAll(".buttons button");
       buttons.forEach((button) => {
         button.addEventListener("click", function () {
           const platformType = this.getAttribute("data-platform");
-          const consoleType = platformType;
-          localStorage.setItem("console", consoleType);
+          localStorage.setItem("console", platformType);
 
           const platform = product.platforms.find(
             (p) => p.type === platformType
           );
-
           if (platform) {
             document.getElementById(
               "product-price"
             ).textContent = `$${platform.price}`;
 
-            const typeElement = this;
-            const allbuttons = document.querySelectorAll(".buttons button");
-
-            allbuttons.forEach((btn) => {
+            buttons.forEach((btn) => {
               btn.classList.remove("white", "blue", "DarkGreen", "LightGreen");
               btn.classList.add("default-style");
             });
 
             switch (platformType) {
               case "ps5":
-                typeElement.classList.add("white");
-                typeElement.classList.remove("default-style");
+                this.classList.add("white");
                 break;
               case "ps4":
-                typeElement.classList.add("blue");
-                typeElement.classList.remove("default-style");
+                this.classList.add("blue");
                 break;
               case "xbox one":
-                typeElement.classList.add("DarkGreen");
-                typeElement.classList.remove("default-style");
+                this.classList.add("DarkGreen");
                 break;
               case "xbox x":
-                typeElement.classList.add("LightGreen");
-                typeElement.classList.remove("default-style");
+                this.classList.add("LightGreen");
                 break;
               default:
-                typeElement.classList.add("white");
+                this.classList.add("white");
                 break;
             }
           }
         });
       });
 
-      // some details
+      // Some details
       document.getElementById(
         "category"
       ).textContent = `Category : ${product.category}`;
@@ -168,44 +161,46 @@ async function loadGames(productId,products) {
       document.getElementById(
         "publisher"
       ).textContent = `Publisher : ${product.publisher}`;
-      document.getElementById(
-        "tags"
-      ).textContent = `Rating : ${product.rating}`;
       document.getElementById("tags").textContent = `Tags : ${product.tags}`;
       document.getElementById(
         "rating"
       ).textContent = `Rating : ${product.rating}`;
 
-      // reviews of users
+      // User reviews
       const reviewsElement = document.getElementById("Reviews");
       product.reviews.forEach((review) => {
-        reviewsElement.innerHTML += `<section> <h2> ${review.username}</h2> <h3> ${review.rating}</h3> <br> <p> ${review.comment} </p> </section> <br>`;
+        reviewsElement.innerHTML += `<section><h2>${review.username}</h2><h3>${review.rating}</h3><br><p>${review.comment}</p></section><br>`;
       });
 
-      // trailer section
-      document.getElementsByClassName(
-        "trailer"
-      )[0].innerHTML = `<iframe width="1200" height="600" src="${product.trailerUrl}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>`;
-      
-      // add to cart
+      // Trailer section
+      document.getElementsByClassName("trailer")[0].innerHTML = `
+        <iframe width="1200" height="600" src="${product.trailerUrl}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      `;
+
+      // Add to cart
       let cartBtn = document.getElementById("cart-button");
       cartBtn.addEventListener("click", () => {
-        let productsArr = JSON.parse(localStorage.getItem("productsArr")) || [];
+        if (isUserLoggedIn()) {
+          let productsArr =
+            JSON.parse(localStorage.getItem("productsArr")) || [];
+          const typeOfConsole = localStorage.getItem("console");
+          const nb = productID;
+          const existingProductIndex = productsArr.findIndex(
+            (product) => product.nb === nb && product.type === typeOfConsole
+          );
 
-        const typeOfConsole = localStorage.getItem("console");
-        const nb = productID;
-        const existingProductIndex = productsArr.findIndex(
-          (product) => product.nb === nb && product.type === typeOfConsole
-        );
+          if (existingProductIndex !== -1) {
+            productsArr[existingProductIndex].occurrence++;
+          } else {
+            productsArr.push({ nb: nb, type: typeOfConsole, occurrence: 1 });
+          }
 
-        if (existingProductIndex !== -1) {
-          productsArr[existingProductIndex].occurrence++;
+          localStorage.setItem("productsArr", JSON.stringify(productsArr));
+          updateCartCount();
+          showCartMessage(); // Show message that product was added
         } else {
-          productsArr.push({ nb: nb, type: typeOfConsole, occurrence: 1 });
+          showLoginModal(); // Show login modal if not logged in
         }
-
-        localStorage.setItem("productsArr", JSON.stringify(productsArr));
-        updateCartCount();
       });
     } else {
       console.error("Product not found!");
@@ -215,96 +210,114 @@ async function loadGames(productId,products) {
   }
 }
 
-
-
-
-
-
-async function loadBundles(rand_number,rand_number2) {
+async function loadBundles(rand_number, rand_number2) {
   try {
-    const response = await fetch('data/bundles.json');
+    const response = await fetch("data/bundles.json");
     const data = await response.json();
     const bundles_arr = data.bundles;
 
-    
-
     const bundles_div = document.getElementById("bundles");
-    const bundle_1 = bundles_arr.find(bun => bun.id === rand_number);
-    const bundle_2 = bundles_arr.find(bun => bun.id === rand_number2);
+    const bundle_1 = bundles_arr.find((bun) => bun.id === rand_number);
+    const bundle_2 = bundles_arr.find((bun) => bun.id === rand_number2);
 
-    const div_bundle1 = document.createElement('div');
+    const div_bundle1 = document.createElement("div");
     div_bundle1.classList.add("bundel-content");
-    div_bundle1.innerHTML = `<div><img src="${bundle_1.image}" alt=""></div>
-        <div>
-          <h1 class="bundel_name">${bundle_1.name}</h1>
-          <h3 class="bundle_price">${bundle_1.price}$</h3>
-          <h3 class="bundle_type"> type: ${bundle_1.type}</h3>
-          <p class="bundle_description"><br>${bundle_1.description}</p>
-          <button class="bundel-button" id="bundle1-button">Add to cart</button>
-        </div>`
-    ;
-    const div_bundle2 = document.createElement('div');
+    div_bundle1.innerHTML = `
+      <div><img src="${bundle_1.image}" alt=""></div>
+      <div>
+        <h1 class="bundel_name">${bundle_1.name}</h1>
+        <h3 class="bundle_price">${bundle_1.price}$</h3>
+        <h3 class="bundle_type">type: ${bundle_1.type}</h3>
+        <p class="bundle_description"><br>${bundle_1.description}</p>
+        <button class="bundel-button" id="bundle1-button">Add to cart</button>
+      </div>
+    `;
+    const div_bundle2 = document.createElement("div");
     div_bundle2.classList.add("bundel-content");
-    div_bundle2.innerHTML = `<div><img src="${bundle_2.image}" alt=""></div>
-        <div>
-          <h1 class="bundel_name">${bundle_2.name}</h1>
-          <h3 class="bundle_price">${bundle_2.price}$</h3>
-          <h3 class="bundle_type"> type: ${bundle_2.type}</h3>
-          <p class="bundle_description"><br>${bundle_2.description}</p>
-          <button class="bundel-button" id="bundle2-button">Add to cart</button>
-        </div>`
-    ;
-    
+    div_bundle2.innerHTML = `
+      <div><img src="${bundle_2.image}" alt=""></div>
+      <div>
+        <h1 class="bundel_name">${bundle_2.name}</h1>
+        <h3 class="bundle_price">${bundle_2.price}$</h3>
+        <h3 class="bundle_type">type: ${bundle_2.type}</h3>
+        <p class="bundle_description"><br>${bundle_2.description}</p>
+        <button class="bundel-button" id="bundle2-button">Add to cart</button>
+      </div>
+    `;
+
     bundles_div.appendChild(div_bundle1);
     bundles_div.appendChild(div_bundle2);
-    
-   
+
+    // Add event listeners for adding bundles to the cart
+    document.getElementById("bundle1-button").addEventListener("click", () => {
+      if (isUserLoggedIn()) {
+        addBundlesToCart(rand_number); // Add bundle 1 to cart
+        showCartMessage(); // Show message that bundle was added
+      } else {
+        showLoginModal(); // Show login modal if not logged in
+      }
+    });
+
+    document.getElementById("bundle2-button").addEventListener("click", () => {
+      if (isUserLoggedIn()) {
+        addBundlesToCart(rand_number2); // Add bundle 2 to cart
+        showCartMessage(); // Show message that bundle was added
+      } else {
+        showLoginModal(); // Show login modal if not logged in
+      }
+    });
   } catch (error) {
-    console.error("Error fetching product data:", error);
+    console.error("Error loading bundles:", error);
   }
 }
 
-
-
-
-
-function addBundlesToCart(id){
-  const addedBundles=JSON.parse(localStorage.getItem('bundlesArr')) || [];
-  const existingBundleIndex = addedBundles.findIndex(
-    (bundle) =>  bundle.id===id
+// Function to add bundles to the cart
+function addBundlesToCart(bundleId) {
+  let bundlesArr = JSON.parse(localStorage.getItem("bundlesArr")) || [];
+  const existingBundleIndex = bundlesArr.findIndex(
+    (bundle) => bundle.id === bundleId
   );
+
   if (existingBundleIndex !== -1) {
-    addedBundles[existingBundleIndex].occurrence++;
+    bundlesArr[existingBundleIndex].occurrence++;
   } else {
-    addedBundles.push({ id: id, occurrence: 1 });
+    bundlesArr.push({ id: bundleId, occurrence: 1 });
   }
 
-  localStorage.setItem("bundlesArr", JSON.stringify(addedBundles));
-
- 
-updateCartCount();
-
+  localStorage.setItem("bundlesArr", JSON.stringify(bundlesArr));
+  updateCartCount();
 }
 
+// Function to check if the user is logged in
+function isUserLoggedIn() {
+  return localStorage.getItem("isLoggedIn") === "true";
+}
 
+// Function to show a success message when an item is added to the cart
+function showCartMessage() {
+  document.getElementById("cart-modal").style.display="block";
+}
 
+// Function to show a login modal
+function showLoginModal() {
+   document.getElementById("notLoggedIn-modal").style.display="block";
+}
+
+// Function to update cart count displayed on the page
 function updateCartCount() {
-  // Retrieve the arrays from local storage
-  const products = JSON.parse(localStorage.getItem('productsArr')) || [];
-  const bundles = JSON.parse(localStorage.getItem('bundlesArr')) || [];
-
-  // Calculate the total count of items
-  const totalCount = products.length + bundles.length;
-
-  // Update the counter on the page
-  document.getElementById('cart-count').textContent = totalCount;
+  const cartCountElement = document.getElementById("cart-count");
+  const productsArr = JSON.parse(localStorage.getItem("productsArr")) || [];
+  const bundlesArr = JSON.parse(localStorage.getItem("bundlesArr")) || [];
+  const totalCount =
+    productsArr.reduce((acc, product) => acc + product.occurrence, 0) +
+    bundlesArr.reduce((acc, bundle) => acc + bundle.occurrence, 0);
+  cartCountElement.textContent = totalCount;
 }
 
-
-
-
-
-
+// Restore original content
+function restoreOriginalContent(originalContent) {
+  document.getElementById("big-container").innerHTML = originalContent;
+}
 
 function searchProducts(products, query) {
     
@@ -347,9 +360,4 @@ function displaySearchResults(products) {
   });
 
   mainContent.appendChild(grid);
-}
-
-function restoreOriginalContent(originalContent) {
-  const mainContent = document.getElementById("big-container");
-  mainContent.innerHTML = originalContent;
 }

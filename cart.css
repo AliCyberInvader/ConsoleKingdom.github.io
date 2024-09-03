@@ -3,6 +3,10 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
     background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
 }
 
 /* Cart container */
@@ -12,22 +16,22 @@ body {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(12, 23, 73, 0.1);
 }
 
 /* Cart item styles */
 .cart-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 1px solid #ddd;
 }
 
 .cart-item img {
-    max-width: 80px;
-    max-height: 80px;
+    max-width: 100px;
+    max-height: 100px;
     border-radius: 8px;
     margin-right: 20px;
 }
@@ -42,7 +46,8 @@ body {
 .cart-item p {
     margin: 0;
     font-size: 16px;
-    color: #666;
+    color: #666; 
+    text-align: center;
 }
 
 .cart-item .price,
@@ -54,8 +59,8 @@ body {
     color: #333;
 }
 
-.cart-item button {
-    background-color: #28a745;
+.cart-item .qun {
+    background-color:#333;
     color: white;
     border: none;
     padding: 5px 10px;
@@ -67,6 +72,30 @@ body {
 
 .cart-item button:hover {
     background-color: #218838;
+    transition: 0.3s;
+}
+.cart-item > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#remove{
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    border: none;
+    background-color: #333;
+    color: #ffffff;
+    width: 50%;
+    
+    
+}
+
+#remove:hover{
+    background-color: rgb(194, 1, 1);
+    transition: 0.3s;
 }
 
 /* Flex container for cart item details */
@@ -127,4 +156,28 @@ body {
     #cart-summary {
         text-align: left;
     }
+}
+.clear-all{
+    padding: 1em 2em;
+    margin: 5px;
+    background-color: rgb(182, 3, 3);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+}
+.clear-all:hover{
+    background-color: rgb(83, 1, 1);
+}
+.checkout{
+    padding: 1em 2em;
+    margin: 5px;
+    background-color: rgb(35, 6, 139);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 15px;
+}
+.checkout:hover{
+    background-color: rgb(16, 2, 65);
 }

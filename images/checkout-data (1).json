@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "id": 8,
+      "name": "The Witcher 3",
+      "platform": "ps5",
+      "quantity": 1,
+      "price": 31
+    }
+  ],
+  "totalQuantity": 1,
+  "finalTotal": "36.99",
+  "paymentMethod": "creditCard",
+  "customerInfo": {
+    "fullName": "ali",
+    "phoneNumber": "76945859",
+    "address": "lebanon",
+    "governorate": "BEIRUT"
+  }
+}

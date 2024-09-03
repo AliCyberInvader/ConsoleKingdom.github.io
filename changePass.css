@@ -1,65 +1,154 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    background: url('images/b.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-    width: 100%;
+    position: relative;
+    width: 750px;
+    height: 500px;
+    background: #000000;
+    border: 2px solid #0ef;
+    box-shadow: 0 0 15px rgb(0, 0, 0), 
+                0 0 30px rgb(82, 245, 218), 
+                0 0 45px #00fbff, 
+                0 0 60px #1e00ff;
+    overflow: hidden;
+    padding: 40px;
+    border-radius: 10px;
 }
 
-h2 {
-    margin-bottom: 20px;
-    font-size: 24px;
+.container h2 {
+    font-size: 32px;
+    color: #fff;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .input-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-input[type="password"] {
+    position: relative;
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    margin: 25px 0;
 }
 
-button {
+.input-group input {
     width: 100%;
-    padding: 10px;
-    background-color: #007bff;
+    height: 50px;
+    background: transparent;
     border: none;
-    border-radius: 4px;
-    color: #fff;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    padding-right: 23px;
     font-size: 16px;
-    cursor: pointer;
-    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.5s;
 }
 
-button:hover {
-    background-color: #0056b3;
+.input-group input:focus,
+.input-group input:valid {
+    border-bottom-color: #0ef;
+}
+
+.input-group label {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input-group input:focus ~ label,
+.input-group input:valid ~ label {
+    top: -5px;
+    color: #0ef;
+}
+
+button[type="submit"], button {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    background: transparent;
+    border: 2px solid #0ef;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 10px;
+    color: #fff;
+    z-index: 1;
+    overflow: hidden;
+}
+
+button[type="submit"]::before,
+button::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 300%;
+    background: linear-gradient(#000000, rgb(68, 255, 0), #000000, #000000);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+button:hover::before {
+    top: 0;
 }
 
 #message {
-    margin-top: 20px;
+    color: #0ef;
     text-align: center;
-    font-size: 14px;
-    color: red;
+    margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.container {
+    opacity: 0;
+    animation: fadeInSlideUp 1s ease forwards;
+}
+
+/* Responsive design */
+@media (max-width: 767px) {
+    .container {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    .container h2 {
+        font-size: 24px;
+    }
+
+    .input-group {
+        margin: 15px 0;
+    }
 }

@@ -3,7 +3,7 @@ body {
   padding: 0;
   background-color: rgba(0, 0, 0, 1);
   color: aliceblue;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "New Amsterdam", sans-serif;
 }
 * {
   padding: 0;
@@ -65,8 +65,8 @@ body {
 
 .general .general-info .cart-btn {
   padding: 0.8em 2em;
-  background-color: orange;
-  border: 1px solid orange;
+  background-color: rgb(51, 128, 74);
+  border: 1px solid rgb(51, 128, 74);
   color: white;
   border-radius: 50px;
   font-size: 15px;
@@ -77,10 +77,10 @@ body {
 }
 
 .general .general-info .cart-btn:hover {
-  box-shadow: 1px 1px 8px orange;
-  border: 1px solid orange;
+  box-shadow: 1px 1px 8px rgb(51, 128, 74);
+  border: 1px solid rgb(51, 128, 74);
   background-color: rgb(32, 32, 32);
-  color: orange;
+  color: rgb(51, 128, 74);
 }
 
 .general .buttons {
@@ -99,7 +99,7 @@ body {
   transition: 0.3s;
   border-radius: 10px;
 }
-.general .general-info .buttons .defualt-style {
+.default-style {
   color: #fff;
   border-color: white;
 }
@@ -184,24 +184,29 @@ body {
 
 .des-plat .description {
   width: 50%;
-  border: 1px solid #fff;
+  border: 1px solid #0015ce;
   padding: 1em;
   border-radius: 10px;
-  background-color: rgba(7, 7, 7, 0.6);
+  background-color: rgba(3, 0, 165, 0.1);
+  box-shadow: 1px 1px 10px #0015ce;
 }
-.des-plat .platform{
-  border: 1px solid #fff;
+.des-plat .platform {
+  border: 1px solid #1d6d31;
   padding: 1em;
   border-radius: 10px;
-  background-color: rgba(7, 7, 7, 0.6);
+  background-color: rgba(44, 167, 109, 0.1);
+  box-shadow: 1px 1px 10px #1d6d31;
 }
 .trailer {
-  margin: 20% 10% 10% 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 80%;
-  height: 80%;
+  height: 100vh;
   overflow: hidden;
+  margin: 50px 0px;
 }
-#bundles{
+#bundles {
   width: 80%;
   margin: 50px;
   height: auto;
@@ -211,7 +216,7 @@ body {
   gap: 200px;
   overflow: hidden;
 }
-.bundel-content{
+.bundel-content {
   width: 50%;
   height: 50%;
   display: flex;
@@ -221,43 +226,38 @@ body {
   border-radius: 25px;
   box-sizing: border-box;
 }
-.bundel-content > div{
+.bundel-content > div {
   min-width: 50%;
   box-sizing: border-box;
 }
-.bundel-content img{
+.bundel-content img {
   width: 100%;
   height: 100%;
   border-radius: 25px;
 }
 
-.bundel-button{
+.bundel-button {
   padding: 10px;
-  margin: 5px 0px;
+  margin: 10px 0px;
+  background-color: rgb(51, 128, 74);
+  border: 1px solid rgb(51, 128, 74);
+  color: white;
+  border-radius: 50px;
   font-size: 15px;
-  border-radius: 10px;
-  border: none;
-  background-color: orange;
-  color: #fff;
   cursor: pointer;
+  transition: 0.3s;
+  width: auto;
+  align-self: flex-end;
 }
 
-.bundel-button:hover{
-  background-color: rgb(153, 99, 0);
+.bundel-button:hover {
+  box-shadow: 1px 1px 8px rgb(51, 128, 74);
+  border: 1px solid rgb(51, 128, 74);
+  background-color: rgb(32, 32, 32);
+  color: rgb(51, 128, 74);
+  transition: 0.3s;
 }
 
-.hidden{
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 4s;
-}
-
-.show{
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-}
 /* Footer Styles */
 .main-footer {
   background-color: #333;
@@ -346,7 +346,6 @@ body {
   font-size: 14px;
 }
 
-
 .main-header {
   background-color: #333;
   color: #fff;
@@ -369,7 +368,7 @@ body {
 .logo img {
   height: 150px; /* Keep the logo size as is */
 
-  max-width: auto; 
+  max-width: auto;
   object-fit: contain;
   display: block;
 }
@@ -497,7 +496,6 @@ body {
   display: grid;
   grid-template-columns: repeat(auto-fit, 240px);
   gap: 20px;
-  
 }
 
 .game-card1 {
@@ -528,4 +526,51 @@ body {
 .game-card1 p {
   font-size: 14px;
   color: #777;
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+  padding-top: 60px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/* The Close Button */
+.close-btn-cart {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close-btn-cart:hover,
+.close-btn-cart:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal-content p{
+  color: black;
+}
+.user-menu h2{
+  margin-bottom: 20px;
 }

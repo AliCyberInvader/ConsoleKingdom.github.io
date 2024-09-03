@@ -1,68 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Checkout</title>
-    <link rel="stylesheet" href="checkout.css" />
-  </head>
-  <body>
-    <header>
-      <!-- link back to home page -->
-      <div>
-        <a href="#">Keep Shopping</a>
-      </div>
-    </header>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
     <div class="main">
-      <div class="list-product"></div>
+        <div class="list-product"></div>
 
-      <div class="checkout">
-        <h1>Checkout</h1>
-        <form id="checkout-form">
-          <div>
-            <label for="full_name">Full Name</label>
-            <input type="text" id="full_name" name="full_name" required />
-          </div>
-          <div>
-            <label for="phone_number">Phone Number</label>
-            <input
-              type="tel"
-              id="phone_number"
-              name="phone_number"
-              pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
-              required
-            />
-          </div>
-          <div>
-            <label for="address">Address</label>
-            <input type="text" id="address" name="address" required />
-          </div>
-          <div>
-            <label for="governorate">Governorate</label>
-            <select id="governorate" name="governorate">
-              <option value="beirut">Beirut</option>
-              <option value="mount_lebanon">Mount Lebanon</option>
-              <option value="north">North</option>
-              <option value="south">South</option>
-              <option value="keserwan_jbeil">Keserwan-Jbeil</option>
-              <option value="nabatieh">Nabatieh</option>
-              <option value="beqaa">Beqaa</option>
-              <option value="akkar">Akkar</option>
-              <option value="baalbek_hermel">Baalbek-Hermel</option>
-            </select>
-          </div>
-
-          <div class="invoice">
-            <p>Total Quantity</p>
-            <strong id="total-quantity"></strong>
-            <p>Total Price</p>
-            <strong id="total-price"></strong>
-          </div>
-
-          <button type="submit" onclick="downloadJSON(event)">Checkout</button>
-        </form>
-      </div>
+        <div class="checkout">
+            <h1>Checkout</h1>
+            <form id="checkout-form">
+                <div>
+                    <label for="full_name">Full Name</label>
+                    <input type="text" id="full_name" name="full_name" required>
+                    <div class="error-message" id="name-error"></div>
+                </div>
+                <div>
+                    <label for="phone_number">Phone Number</label>
+                    <input type="tel" id="phone_number" name="phone_number" required>
+                    <div class="error-message" id="phone-error"></div>
+                </div>
+                <div>
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required>
+                    <div class="error-message" id="address-error"></div>
+                </div>
+                <div id="radio-group">
+                    <label for="shipping">Shipping</label>
+                    <input type="radio" id="inside-lebanon" name="shipping" value="inside-lebanon" required>
+                    <label for="inside-lebanon">Inside Lebanon</label>
+                    <input type="radio" id="outside-lebanon" name="shipping" value="outside-lebanon" required>
+                    <label for="outside-lebanon">Outside Lebanon</label>
+                </div>
+                <div>
+                    <label for="governorate" id="gov-text">Governorate if inside Lebanon*</label>
+                    <select id="governorate" name="governorate">
+                        <option value="beirut">Beirut</option>
+                        <option value="mount_lebanon">Mount Lebanon</option>
+                        <option value="north">North</option>
+                        <option value="south">South</option>
+                        <option value="keserwan_jbeil">Keserwan-Jbeil</option>
+                        <option value="nabatieh">Nabatieh</option>
+                        <option value="beqaa">Beqaa</option>
+                        <option value="akkar">Akkar</option>
+                        <option value="baalbek_hermel">Baalbek-Hermel</option>
+                    </select>
+                </div>
+                <div id="country-container" style="display:none;">
+                    <label for="country">Country*</label>
+                    <select id="country" name="country">
+                        <!-- Populated dynamically -->
+                    </select>
+                    <div class="error-message" id="country-error"></div>
+                </div>
+                <div class="paymentmethod">
+                    <label for="paymentMethod">Payment Method:</label>
+                    <select id="paymentMethod" name="paymentMethod">
+                        <option value="creditCard">Credit Card</option>
+                        <option value="paypal">PayPal</option>
+                        <option value="bankTransfer">Bank Transfer</option>
+                        <option value="applePay">Apple Pay</option>
+                        <option value="googlePay">Google Pay</option>
+                        <option value="cod">Cash on Delivery (COD)</option>
+                    </select>
+                </div>
+                <div class="invoice">
+                    <p>Total Quantity</p>
+                    <strong id="total-quantity"></strong>
+                    <p>Total Price</p>
+                    <strong id="total-price"></strong>
+                </div>
+                <button type="submit">Checkout</button>
+            </form>
+        </div>
     </div>
     <script src="checkout.js"></script>
-  </body>
+</body>
 </html>

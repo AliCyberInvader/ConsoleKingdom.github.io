@@ -8,7 +8,15 @@ const mainContent=document.getElementById("main-content");
 const productsContainer=document.getElementById("products");
 
 document.addEventListener("DOMContentLoaded",async function() {
+    const banner = document.getElementById('banner');
 
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+            banner.classList.add('scrolled');
+        } else {
+            banner.classList.remove('scrolled');
+        }
+    });
     let isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';  // Convert to boolean
     if(localStorage.getItem('isLoggedIn') == null){
         localStorage.setItem('isLoggedIn', 'false');
@@ -230,7 +238,7 @@ function loadItems(products){
                 <img src="${game.bg}"">
                 <h3>${game.name}</h3>
                 <p>${game.platforms[platformINdex].type}</p>
-                <p>${game.platforms[platformINdex].price}</p>
+                <p>$${game.platforms[platformINdex].price}</p>
                 
             
             `;
@@ -462,3 +470,8 @@ console.log(cond);
   
     
   }
+
+  function scrollToProducts() {
+    const productsSection = document.getElementById('products');
+    productsSection.scrollIntoView({ behavior: 'smooth' });
+}
