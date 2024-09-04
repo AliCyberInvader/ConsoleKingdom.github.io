@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", async () => {
+  document.getElementById("close-btn-cart").addEventListener("click",()=>document.getElementById("cart-modal").style.display="none");
     try {
       const bundleResponse = await fetch("data/bundles.json");
       const resBndl = await bundleResponse.json();
@@ -203,131 +204,82 @@ document.addEventListener("DOMContentLoaded", async () => {
   function checkout() {
     const productsArr = JSON.parse(localStorage.getItem("productsArr")) || [];
     const bundlesArr = JSON.parse(localStorage.getItem("bundlesArr")) || [];
-  
+
     if (productsArr.length === 0 && bundlesArr.length === 0) {
-      alert("Your cart is empty. Add items to your cart before checking out.");
-      return;
+        document.getElementById("cart-modal").style.display = "block";
+        return;
     }
-  
-    // Fetch products.json
-    fetch("data/products.json")
-      .then((response) => response.json())
-      .then((data) => {
-        const products = data.games;
+
+    // Fetch products.json and bundles.json in parallel
+    Promise.all([
+        fetch("data/products.json").then((res) => res.json()),
+        fetch("data/bundles.json").then((res) => res.json())
+    ]).then(([productData, bundleData]) => {
         const checkoutItems = [];
         let subtotal = 0;
         let discount = 0;
-        const delivery = 5.99;
         let totalQuantity = 0;
-  
+
+        // Add products to the checkoutItems array
         productsArr.forEach((cartItem) => {
-          const product = products.find((item) => item.id == cartItem.nb);
-          if (!product) {
-            console.error(`Product with id ${cartItem.nb} not found.`);
-            return;
-          }
-  
-          const platform = product.platforms.find(
-            (p) => p.type === cartItem.type
-          );
-          if (!platform) {
-            console.error(
-              `Platform ${cartItem.type} not found for product id ${product.id}.`
-            );
-            return;
-          }
-  
-          const price = platform.price;
-          const discountedPrice = cartItem.discountedPrice || price;
-          const totalItemPrice = discountedPrice * cartItem.occurrence;
-  
-          subtotal += price * cartItem.occurrence;
-          discount += (price - discountedPrice) * cartItem.occurrence;
-          totalQuantity += cartItem.occurrence;
-  
-          checkoutItems.push({
-            id: product.id,
-            name: product.name,
-            platform: platform.type,
-            quantity: cartItem.occurrence,
-            price: discountedPrice,
-            totalItemPrice: totalItemPrice,
-            image: platform.image,
-          });
+            const product = productData.games.find((item) => item.id == cartItem.nb);
+            if (!product) return;
+
+            const platform = product.platforms.find((p) => p.type === cartItem.type);
+            if (!platform) return;
+
+            const price = platform.price;
+            const discountedPrice = cartItem.discountedPrice || price;
+            const totalItemPrice = discountedPrice * cartItem.occurrence;
+
+            subtotal += price * cartItem.occurrence;
+            discount += (price - discountedPrice) * cartItem.occurrence;
+            totalQuantity += cartItem.occurrence;
+
+            checkoutItems.push({
+                id: product.id,
+                name: product.name,
+                platform: platform.type,
+                quantity: cartItem.occurrence,
+                price: discountedPrice,
+                totalItemPrice: totalItemPrice
+            });
         });
-  
-        const finalTotal = subtotal - discount + delivery;
-  
+
+        // Add bundles to the checkoutItems array
+        bundlesArr.forEach((cartItem) => {
+            const bundle = bundleData.bundles.find((item) => item.id == cartItem.id);
+            if (!bundle) return;
+
+            const price = bundle.price;
+            const discountedPrice = cartItem.discountedPrice || price;
+            const totalItemPrice = discountedPrice * cartItem.occurrence;
+
+            subtotal += price * cartItem.occurrence;
+            discount += (price - discountedPrice) * cartItem.occurrence;
+            totalQuantity += cartItem.occurrence;
+
+            // Add bundle info to the same checkoutItems array
+            checkoutItems.push({
+                id: bundle.id,
+                name: bundle.name,
+                platform: bundle.type,
+                quantity: cartItem.occurrence,
+                price: discountedPrice,
+                totalItemPrice: totalItemPrice
+            });
+        });
+
+        const finalTotal = subtotal - discount + 5.99; // Adding delivery fee
+
+        // Save checkout data to localStorage
         localStorage.setItem("checkoutItems", JSON.stringify(checkoutItems));
         localStorage.setItem("finalTotal", finalTotal.toFixed(2));
         localStorage.setItem("totalQuantity", totalQuantity.toString());
-      })
-      .catch((error) => {
-        console.error("Error loading cart data:", error);
-      });
-  
-    // Fetch bundles.json
-    fetch("data/bundles.json")
-      .then((response) => response.json())
-      .then((data) => {
-        const products = data.bundles;
-        const bundleCheckoutItems = [];
-        let bundlesSubtotal = 0;
-        let discount = 0;
-        let bundlesTotalQuantity = 0;
-  
-        bundlesArr.forEach((cartItem) => {
-          const product = products.find((item) => item.id == cartItem.id);
-          if (!product) {
-            console.error(`Product with id ${cartItem.id} not found.`);
-            return;
-          }
-  
-          const price = product.price;
-          const discountedPrice = cartItem.discountedPrice || price;
-          const bundlesTotalItemPrice = discountedPrice * cartItem.occurrence;
-  
-          bundlesSubtotal += price * cartItem.occurrence;
-          discount += (price - discountedPrice) * cartItem.occurrence;
-          bundlesTotalQuantity += cartItem.occurrence;
-  
-          bundleCheckoutItems.push({
-            id: product.id,
-            name: product.name,
-            platform: product.type,
-            quantity: cartItem.occurrence,
-            price: discountedPrice,
-            bundlesTotalItemPrice: bundlesTotalItemPrice,
-            image: product.image,
-          });
-        });
-  
-        const bundlesFinalTotal = bundlesSubtotal - discount;
-  
-        // Ensure no overwrite or issues in local storage set operation
-        console.log("Setting bundle checkout items:", bundleCheckoutItems);
-        localStorage.setItem(
-          "bundleCheckoutItems",
-          JSON.stringify(bundleCheckoutItems)
-        );
-        localStorage.setItem("bundlesFinalTotal", bundlesFinalTotal.toFixed(2));
-        localStorage.setItem(
-          "bundlesTotalQuantity",
-          bundlesTotalQuantity.toString()
-        );
-  
-        // Open or focus on the checkout tab
-        if (checkoutTab === null || checkoutTab.closed) {
-          checkoutTab = window.location.replace("checkout.html");
-          setTimeout(() => {
-            checkoutTab.postMessage({ type: "updateCheckout" }, "*");
-          }, 500);
-        } else {
-          checkoutTab.focus();
-          checkoutTab.postMessage({ type: "updateCheckout" }, "*");
-        }
-      })
-      .catch((error) => {
-        console.error("Error loading bundles data:", error);
-      });
-  }
+
+        // Redirect to the checkout page
+        window.location.href = "checkout.html";
+    }).catch((error) => {
+        console.error("Error during checkout:", error);
+    });
+}

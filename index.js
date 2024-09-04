@@ -46,7 +46,7 @@ const loggedINusername=localStorage.getItem('username');
     if(isLoggedIn==true){
 document.getElementById("user-menu").innerHTML=
 `<h2>Welcome ${loggedINusername}</h2>
-  <a class="signup-link" id="logOut">Log out</a>
+  <a class="logout-link" id="logOut">Log out</a>
 `;
 document.getElementById("logOut").addEventListener("click",()=>{  
     localStorage.setItem('isLoggedIn', 'false');
@@ -222,7 +222,7 @@ function loadItems(products){
              categName=containerId.slice(0,index);
         }
        let grid=document.createElement("div");
-       grid.classList.add("games-grid");
+       grid.classList.add("edit-games");
 
         container.innerHTML = 
         `<h1>${categName}</h1>
@@ -272,7 +272,7 @@ function filter() {
 
         const filters = {
             Action: document.getElementById("action").checked,
-            Sports: document.getElementById("sports").checked,
+            SPORTS: document.getElementById("sports").checked,
             Survival: document.getElementById("survival").checked,
             Adventure: document.getElementById("adventure").checked,
         };

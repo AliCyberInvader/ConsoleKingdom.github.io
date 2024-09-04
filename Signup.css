@@ -1,78 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family-Poppins:wght@300;400;500;700;800;900&display=swap');
-
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Popp', sans-serif;
+    font-family: 'Popp',sans-serif;
 }
-
-body {
+body{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: url('images/b.jpg') no-repeat center center fixed;
     background-size: cover;
-}
 
-@keyframes fadeInSlideUp {
-    0% {
-        opacity: 0;
-        transform: translateY(50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
 }
-
 .wrapper {
     position: relative;
     width: 750px;
     height: 700px;
     background: #000000;
-    border: 2px solid #0ef;
+    border: 2px solid #0ef;  
     box-shadow: 0 0 15px rgb(0, 0, 0), 
-                0 0 30px rgb(82, 245, 218), 
-                0 0 45px #00fbff, 
-                0 0 60px #1e00ff;
-    overflow: hidden;
-    opacity: 0;
-    animation: fadeInSlideUp 2s ease forwards;
+    0 0 30px rgb(82, 245, 218), 
+    0 0 45px #00fbff, 
+    0 0 60px #1e00ff;
+overflow: hidden;
+  }
+  
+.wrapper .form-box.signup{
+right: 0;
+padding: 0 60px 0 40px ;
 }
-
-.wrapper .form-box.signup {
-    right: 0;
-    padding: 0 60px 0 40px;
-}
-
-.wrapper .form-box {
-    position: absolute;
+.wrapper .form-box{
+position: absolute;                                 
     top: 0;
     width: 50%;
     height: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction:column ;
     justify-content: center;
 }
-
-.form-box h2 {
+.form-box h2{
     font-size: 32px;
     color: #fff;
     text-align: center;
 }
-
-.form-box .input-box {
+.form-box .input-box{
     position: relative;
     width: 100%;
     height: 50px;
     margin: 25px 0;
 }
-
-.input-box input {
+.input-box input{
     width: 100%;
-    height: 100%;
+    height:100% ;
     background: transparent;
     border: none;
     outline: none;
@@ -85,11 +66,11 @@ body {
 }
 
 .input-box input:focus,
-.input-box input:valid {
-    border-bottom-color: #0ef;
+.input-box input:valid{
+   border-bottom-color:#0ef ;
+   
 }
-
-.input-box label {
+.input-box label{
     position: absolute;
     top: 50%;
     left: 0;
@@ -101,12 +82,11 @@ body {
 }
 
 .input-box input:focus~label,
-.input-box input:valid~label {
+.input-box input:valid~label{
     top: -5px;
     color: #0ef;
 }
-
-.input-box i {
+.input-box i{
     position: absolute;
     top: 50%;
     right: 0;
@@ -115,18 +95,16 @@ body {
     color: #fff;
     transition: 0.5s;
 }
-
 .input-box input:focus~i,
-.input-box input:valid~i {
-    color: #0ef;
+.input-box input:valid~i{
+  color: #0ef;
 }
-
-.btn {
+.btn{
     position: relative;
     width: 100%;
     height: 45px;
     background: transparent;
-    border: 2px solid #0ef;
+    border:2px solid #0ef;
     outline: none;
     border-radius: 40px;
     cursor: pointer;
@@ -136,47 +114,42 @@ body {
     z-index: 1;
     overflow: hidden;
 }
-
-.btn::before {
+.btn::before{
     content: '';
     position: absolute;
     top: -100%;
     left: 0;
     width: 100%;
     height: 300%;
-    background: linear-gradient(#000000, rgb(68, 255, 0), #000000, #000000);
+    background: linear-gradient( #000000, rgb(68, 255, 0), #000000, #000000); 
     z-index: -1;
     transition: 0.5s;
 }
-
 .btn.facebook::before {
-    background: linear-gradient(#000000, #0ef, #000000, #000000);
+    background: linear-gradient( #000000, #0ef, #000000, #000000); 
 }
 
 .btn.google::before {
-    background: linear-gradient(#000000, #0ef, #000000, #000000);
+    background: linear-gradient( #000000, #0ef, #000000, #000000); 
 }
 
-.btn:hover::before {
+.btn:hover::before{
     top: 0;
 }
-
-.form-box .logreg-link {
-    font-size: 14.5px;
-    color: #fff;
-    text-align: center;
-    margin: 20px 0 10px;
+.form-box .logreg-link{
+   font-size:14.5px;
+   color: #fff;
+   text-align: center;
+   margin: 20px 0 10px;
 }
-
-.logreg-link p a {
+.logreg-link p a{
     color: #0ef;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 600; 
 }
-
-.logreg-link p a:hover {
+.logreg-link p a:hover{
     text-decoration: underline;
-}
+}  
 
 .wrapper .bg-animate {
     position: absolute;
@@ -188,41 +161,37 @@ body {
     background-size: 80%; 
 }
 
-@media (max-width: 767px) {
-    body {
-        min-height: 100vh;
-        background-size: cover;
+@media (max-width: 767px){
+    body{
+      min-height: 100vh;
+      background-size: cover;
     }
-
-    .wrapper .form-box.signup {
-        padding: 0 30px 0 5px;
+   
+    .wrapper .form-box.signup{
+      padding: 0 30px 0 5px ;
     }
-
-    .form-box h2 {
+   
+    .form-box h2{
         font-size: 32px;
         margin-bottom: 5px;
     }
-
-    .info-text h2 {
+    .info-text h2{
         font-size: 20px;
         text-align: center;
     }
-
-    .info-text p {
+    .info-text p{
         text-align: center;
     }
-
-    .wrapper .form-box {
+    .wrapper .form-box{
         width: 90%;
         height: 100%;
     }
-
     .wrapper {
         position: relative;
         width: 100%; 
         height: 100%; 
     }
-
+    
     .wrapper .bg-animate {
         position: absolute;
         top: 40%;
@@ -234,12 +203,15 @@ body {
         transform: translate(-50%, -50%); 
         filter: blur(3px);
     }
-
-    .form-box .input-box {
+    
+    
+    .form-box .input-box{
         margin: 15px 0;
     }
-}
+  }
+ 
 
+/* Updated styles for the custom alert and password strength alert */
 #custom-alert, #password-strength-alert {
     display: none;
     position: fixed;
@@ -275,6 +247,7 @@ body {
     color: #000;
 }
 
+/* Hide the alert initially */
 .hidden {
     display: none;
 }
@@ -295,4 +268,29 @@ body {
 .input-box input[type="password"]:focus + i.bx-show,
 .input-box input[type="password"]:valid + i.bx-show {
     color: #0ef;
+}
+/* Prevents autofill from changing the font color or weight */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    font-family: 'Poppins', sans-serif; /* Ensures the same font family */
+    -webkit-text-fill-color: #fff !important; /* Sets text color to white */
+    font-weight: 500 !important; /* Ensures the font weight remains consistent */
+    transition: background-color 5000s ease-in-out 0s; /* Prevents background color change */
+    background-clip: text; /* Keeps the text visible */
+}
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.wrapper {
+    opacity: 0;
+    animation: fadeInSlideUp 2s ease forwards;
 }

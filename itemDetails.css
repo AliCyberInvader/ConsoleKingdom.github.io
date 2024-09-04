@@ -1,13 +1,243 @@
-body {
+/* Reset margins, padding, and prevent horizontal scrolling */
+html, body {
+  font-family: "New Amsterdam", sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+  box-sizing: border-box; /* Apply border-box globally */
+}
+body{
   margin: 0;
   padding: 0;
   background-color: rgba(0, 0, 0, 1);
   color: aliceblue;
-  font-family: "New Amsterdam", sans-serif;
 }
-* {
-  padding: 0;
+/* Apply box-sizing to all elements */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+/* General Header Styles */
+.main-header {
+  background-color: #333;
+  color: #fff;
+  padding: 15px 0;
+  position: relative; 
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Container with flex layout for proper alignment */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto; /* Center the container */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items vertically */
+  padding: 0 20px; /* Add some padding on the sides */
+}
+
+/* Logo styling */
+.logo img {
+  height: 150px;
+  object-fit: contain;
+  display: block;
+}
+
+/* Main Navigation Styles */
+.main-nav ul {
+  list-style: none;
   margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 30px; /* Space between menu items */
+  align-items: center;
+}
+
+.main-nav ul li {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 15px 20px;
+  font-size: 18px;
+  display: block;
+}
+
+.main-nav ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Header Actions (Search, Login, Cart) */
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Adjust space between search, login, cart */
+}
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px 10px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.search-bar input {
+  border: none;
+  padding: 10px;
+  outline: none;
+  flex: 1;
+}
+
+.search-bar button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+  }
+
+  .main-nav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .logo img {
+      height: 100px;
+  }
+
+  .main-nav ul li a {
+      font-size: 16px;
+      padding: 10px 15px;
+  }
+
+  .header-actions {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .search-bar {
+      max-width: 100%; /* Make search bar full width */
+  }
+}
+
+.header-actions {
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  gap: 25px; /* Adjust gap for better spacing */
+}
+
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 5px 10px;
+  max-width: 300px; /* Restrict width for consistency */
+}
+
+.search-bar input {
+  border: none;
+  padding: 10px 15px; /* Adjusted padding for better alignment */
+  outline: none;
+  flex: 1;
+  font-size: 16px;
+}
+
+.search-bar button {
+  background-color: transparent;
+  border: none;
+  padding: 10px 15px; /* Adjusted padding */
+  cursor: pointer;
+}
+
+.search-bar button img {
+  height: 20px;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Adjust space between "Welcome" and "Log Out" */
+}
+
+.user-menu.logged-out {
+  display: flex;
+  gap: 15px; /* Space between "Login" and "Sign Up" */
+}
+
+.user-menu.logged-out a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+
+.user-menu.logged-out a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+/* Logged In State: Welcome message and Log Out (stacked vertically) */
+.user-menu.logged-in {
+  display: flex;
+  flex-direction: column; /* Stack vertically */
+  align-items: flex-end;  /* Align to the right */
+  gap: 5px; /* Small gap between the welcome and log out */
+}
+
+.user-menu.logged-in h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  color: #fff; /* Text color for "Welcome" */
+  font-weight: bold;
+  text-align: right; /* Align text to the right */
+}
+
+.user-menu.logged-in a.logout-link {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  text-align: right;
+}
+
+.user-menu.logged-in a.logout-link:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+.user-menu a {
+  display: inline-block; /* Ensure login and sign-up stay in a row */
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  white-space: nowrap; 
+}
+.user-menu a:hover {
+  background-color: #555;
+  border-radius: 5px;
 }
 .general {
   display: grid;
@@ -130,7 +360,23 @@ body {
   border-color: rgb(17, 253, 17);
   box-shadow: 1px 1px 8px rgb(17, 253, 17);
 }
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .general .buttons {
+      flex-direction: column; /* Stack buttons vertically */
+      justify-content: center; /* Center them */
+      align-items: center; /* Center them vertically as well */
+      gap: 8px; /* Reduce gap for smaller screens */
+  }
 
+  .general .general-info .buttons button {
+      padding: 0.6em 1.2em; /* Reduce padding for smaller screens */
+      font-size: 13px; /* Slightly smaller font for mobile */
+      min-width: 100px; /* Ensure buttons are compact on mobile */
+      width: 100%; /* Make buttons take up full width */
+      max-width: 200px; /* Limit maximum width */
+  }
+}
 .white {
   color: white;
   border-color: white;
@@ -346,101 +592,6 @@ body {
   font-size: 14px;
 }
 
-.main-header {
-  background-color: #333;
-  color: #fff;
-  padding: 15px 0; /* Adjust padding to balance the larger logo */
-}
-
-.container {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  height: 150px; /* Keep the logo size as is */
-
-  max-width: auto;
-  object-fit: contain;
-  display: block;
-}
-
-.main-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  gap: 30px; /* Slightly increase gap to space out items */
-}
-
-.main-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 15px 20px; /* Increase padding for better visual weight */
-  font-size: 18px; /* Increase font size for prominence */
-  display: block;
-}
-
-.main-nav ul li a:hover {
-  background-color: #555;
-  border-radius: 5px;
-}
-
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 25px; /* Adjust gap for better spacing */
-}
-
-.search-bar {
-  display: flex;
-  align-items: center;
-  background-color: #fff;
-  border-radius: 5px;
-  overflow: hidden;
-  padding: 5px 10px;
-  max-width: 300px; /* Restrict width for consistency */
-}
-
-.search-bar input {
-  border: none;
-  padding: 10px 15px; /* Adjusted padding for better alignment */
-  outline: none;
-  flex: 1;
-  font-size: 16px;
-}
-
-.search-bar button {
-  background-color: transparent;
-  border: none;
-  padding: 10px 15px; /* Adjusted padding */
-  cursor: pointer;
-}
-
-.search-bar button img {
-  height: 20px;
-}
-
-.user-menu a {
-  color: #fff;
-  text-decoration: none;
-  padding: 15px 20px; /* Increased padding for better alignment with nav items */
-  font-size: 18px; /* Match with navigation items */
-}
-
-.user-menu a:hover {
-  background-color: #555;
-  border-radius: 5px;
-}
 
 .cart-icon {
   position: relative;

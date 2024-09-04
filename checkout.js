@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("checkout-form").addEventListener("submit", function (event) {
       event.preventDefault();
       if (validateForm()) {
-        downloadJSON(event);
+         downloadJSON(event);
         setTimeout(()=>{
          
           localStorage.removeItem('totalQuantity');
